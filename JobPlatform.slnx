@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="JobPlatform.Domain/JobPlatform.Domain.csproj" />
+  <Project Path="JobPlatform/JobPlatform.API.csproj" />
+</Solution>
