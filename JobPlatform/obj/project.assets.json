@@ -453,9 +453,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatform\\JobPlatform.API.csproj",
-      "projectName": "JobPlatform.API",
-      "projectPath": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatform\\JobPlatform.API.csproj",
+      "projectUniqueName": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatform\\JobPlatformBackend.API.csproj",
+      "projectName": "JobPlatformBackend.API",
+      "projectPath": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatform\\JobPlatformBackend.API.csproj",
       "packagesPath": "C:\\Users\\suhib\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatform\\obj\\",
       "projectStyle": "PackageReference",

@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatform.Domain\\JobPlatform.Domain.csproj",
-      "projectName": "JobPlatform.Domain",
-      "projectPath": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatform.Domain\\JobPlatform.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatform.Domain\\JobPlatformBackend.Domain.csproj",
+      "projectName": "JobPlatformBackend.Domain",
+      "projectPath": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatform.Domain\\JobPlatformBackend.Domain.csproj",
       "packagesPath": "C:\\Users\\suhib\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatform.Domain\\obj\\",
       "projectStyle": "PackageReference",

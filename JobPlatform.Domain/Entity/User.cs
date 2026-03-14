@@ -27,9 +27,6 @@ namespace JobPlatform.Domain.Entity
 		public ICollection<Application> Applications { get; set; } = new List<Application>();		
 		public ICollection<UserSkill> UserSkills { get; set; } = new List<UserSkill>();
 
-
-
-
 	}
 
 }
