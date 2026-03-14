@@ -1,6 +1,7 @@
 ﻿using JobPlatform.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
-using System;
+ ﻿using Microsoft.EntityFrameworkCore;
+ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace JobPlatformBackend.Infrastructure.src.Database
 {
 	 class AppDbContext:DbContext
 	{
-		public DbSet<User> Users { get; set; }
+ 		public DbSet<User> Users { get; set; }
 		public DbSet<Company>Companies { get; set; }
 
 		public DbSet<Application> Applications { get; set; }	
@@ -31,5 +32,6 @@ namespace JobPlatformBackend.Infrastructure.src.Database
 			modelBuilder.ApplyConfigurationsFromAssembly(modelBuilder.GetType().Assembly);
 		}
 
+ 
 	}
 }

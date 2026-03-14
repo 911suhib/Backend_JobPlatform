@@ -22,4 +22,6 @@
     <ProjectReference Include="..\JobPlatform.Domain\JobPlatformBackend.Domain.csproj" />
   </ItemGroup>
 
+ 
+
 </Project>
