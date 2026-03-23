@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="JobPlatform.Domain/JobPlatformBackend.Domain.csproj" />
   <Project Path="JobPlatform/JobPlatformBackend.API.csproj" />
+  <Project Path="JobPlatformBackend.Business/JobPlatformBackend.Business.csproj" Id="8f49312f-7e24-40f0-906e-f1759f4d8f3c" />
   <Project Path="JobPlatformBackend.Infrastructure/JobPlatformBackend.Infrastructure.csproj" Id="1af29ebe-52bf-481a-be3a-11aa0579e261" />
 </Solution>

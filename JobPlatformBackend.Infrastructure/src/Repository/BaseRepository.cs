@@ -54,37 +54,101 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 				_logger.LogError(ex, "Error deleting {Entity}", typeof(TEntity).Name); throw;
 			}
 		}
-
-		public async Task<IEnumerable<TEntity>> GetAllAsync(QueryOptions queryOptions)
+		public async Task<IEnumerable<TResult>> GetAllAsync<TResult>(
+	QueryOptions queryOptions,
+	Expression<Func<TEntity, TResult>> selector)
 		{
-			
-				IQueryable<TEntity> query = _dbset;
+			if (queryOptions == null)
+				throw new ArgumentNullException(nameof(queryOptions));
 
-				if (!string.IsNullOrEmpty(queryOptions.SearchKeyword)) {
-				var searchableProperties= typeof(TEntity).GetProperties().Where(p=>p.PropertyType==typeof(string)).ToList();
+			IQueryable<TEntity> query = _dbset.AsNoTracking();
 
-				var parameter=Expression.Parameter(typeof(TEntity),"entity");
-				var orConditions=new List<Expression>();
+			// ===== Search =====
+			if (!string.IsNullOrEmpty(queryOptions.SearchKeyword))
+			{
+				var searchableProperties = typeof(TEntity)
+					.GetProperties()
+					.Where(p => p.PropertyType == typeof(string))
+					.ToList();
 
-					foreach (var property in searchableProperties) {
+				if (searchableProperties.Any())
+				{
+					var parameter = Expression.Parameter(typeof(TEntity), "entity");
+					var orConditions = new List<Expression>();
+
+					foreach (var property in searchableProperties)
+					{
 						var propertyAccess = Expression.Property(parameter, property);
+						var toLowerMethod = typeof(string).GetMethod("ToLower", Type.EmptyTypes)!;
+						var callToLower = Expression.Call(propertyAccess, toLowerMethod);
 
+						var patternExpr = Expression.Constant($"%{queryOptions.SearchKeyword.ToLower()}%");
+						var likeMethod = typeof(DbFunctionsExtensions).GetMethod(
+							"Like",
+							new[] { typeof(DbFunctions), typeof(string), typeof(string) }
+						)!;
+						var efFunctions = Expression.Property(null, typeof(EF), nameof(EF.Functions));
+
+						var likeCall = Expression.Call(likeMethod, efFunctions, callToLower, patternExpr);
+						orConditions.Add(likeCall);
 					}
+
+					var combined = orConditions.Aggregate(Expression.OrElse);
+					var lambda = Expression.Lambda<Func<TEntity, bool>>(combined, parameter);
+					query = query.Where(lambda);
 				}
-			return await query.AsNoTracking().ToListAsync();
+			}
 
+			// ===== Sorting =====
+			var propertyInfo = typeof(TEntity).GetProperty(queryOptions.SortBy);
+			if (propertyInfo != null)
+			{
+				query = ApplySorting(query, queryOptions.SortBy, queryOptions.SortDescending);
+			}
 
+			// ===== Pagination =====
+			int pageNumber = Math.Max(1, queryOptions.PageNumber);
+			int pageSize = Math.Min(100, queryOptions.PageSize);
+			query = query.Skip((pageNumber - 1) * pageSize).Take(pageSize);
 
+			// ===== Projection =====
+			return await query.Select(selector).ToListAsync();
 		}
-
-		public Task<TEntity> GetByIdAsync(TEntity entity)
+		public static IQueryable<TEntity> ApplySorting<TEntity>(IQueryable<TEntity> query,string sortBy,bool descending)
 		{
-			throw new NotImplementedException();
+			var property = typeof(TEntity).GetProperty(sortBy)
+	?? throw new ArgumentException($"Property '{sortBy}' not found on type '{typeof(TEntity).Name}'");
+
+
+
+			var parameter =Expression.Parameter(typeof(TEntity),"x");
+			var propertyAccess = Expression.Property(parameter,property);
+
+			var lambda=Expression.Lambda(propertyAccess, parameter);
+			var methodName=descending?"OrderByDescending":"OrderBy";
+
+			var result = Expression.Call
+				(
+				typeof(Queryable), methodName, new Type[] { typeof(TEntity), property.PropertyType }, query.Expression, Expression.Quote(lambda)
+				);
+			return query.Provider.CreateQuery<TEntity>(result);
 		}
 
-		public Task<TEntity> UpdateAsync(TEntity entity)
+		public async Task<TEntity?> GetByIdAsync(object id)
 		{
-			throw new NotImplementedException();
+			return await _dbset.FindAsync(id)??throw new ArgumentNullException("not found");
 		}
+
+		public async Task<TEntity> UpdateAsync(object id,TEntity entity)
+		{
+			var existingEntity=await GetByIdAsync(id);
+			if (existingEntity == null)
+				return null;
+			_applicatoinDbContext.Entry(existingEntity).CurrentValues.SetValues(entity);
+
+			return existingEntity;
+		}
+
+		 
 	}
 }
