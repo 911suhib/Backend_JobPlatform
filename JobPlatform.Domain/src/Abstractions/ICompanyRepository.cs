@@ -2,9 +2,7 @@
 
 namespace JobPlatformBackend.Domain.src.Abstractions
 {
-	public interface ICompanyRepository : IBaseRepository<Company> { 
-	Task<Company> GetWithDetailsAsync(int id);
-		Task<Job> AddJobToCompanyAsync(int companyId, Job job);
-		
+	public interface ICompanyRepository : IBaseRepository<Company> {
+		Task<bool> IsUserAdminOfCompanyAsync(int userId, int companyId);
 	}
 }

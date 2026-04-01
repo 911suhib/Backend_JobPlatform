@@ -28,9 +28,7 @@ namespace JobPlatformBackend.Infrastructure.src.Configuration
 			builder.Property(x => x.Descriptoin)
 				.HasMaxLength(1000);
 
-			builder.HasMany(x => x.Admins)
-				.WithOne(u => u.Company)
-				.HasForeignKey(u => u.CompanyId);
+		 
 
 			builder.HasMany(x => x.Jobs)
 				.WithOne(j => j.Company)

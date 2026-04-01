@@ -28,7 +28,7 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectio
 
 
 
-
+ 
 builder.Services.AddTransient<LoggingMiddleWare>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService,UserService>();
@@ -44,7 +44,9 @@ builder.Services.AddScoped<ISkillService, SkillService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IVerificationService, VerificationService>();
 builder.Services.AddScoped<IEmailTemplateService, EmailTemplateService>();
-
+builder.Services.AddScoped<IJobService, JobService>();
+builder.Services.AddScoped<IJobRepository, JobRepository>();
+builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -81,15 +83,21 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+	c.SwaggerEndpoint("/swagger/v1/swagger.json", "API V1");
+});
 app.UseMiddleware<LoggingMiddleWare>();
 
-app.UseExceptionHandler("/error");
-
+if (app.Environment.IsDevelopment())
+{
+	app.UseDeveloperExceptionPage(); // »ÿ·⁄·ﬂ «·Œÿ√ »«· ›’Ì· «·„„· ›Ì Swagger
+}
+else
+{
+	app.UseExceptionHandler("/error");
+}
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();

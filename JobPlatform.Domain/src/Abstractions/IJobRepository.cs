@@ -1,14 +1,17 @@
-﻿using JobPlatformBackend.Domain.src.Entity;
+﻿using JobPlatformBackend.Contracts.Contracts.Jop;
+using JobPlatformBackend.Domain.src.Entity;
 
 namespace JobPlatformBackend.Domain.src.Abstractions
 {
 	public interface IJobRepository : IBaseRepository<Job>
 	{
-		//get all jobs for a specific company
-		Task<IEnumerable<Job>> GetByCompanyIdAsync(int companyId);
-		//get job with its related company, applicatoins , and jobskills
-		Task<IEnumerable<Job>> GetWithDetailsAsync(int jobId);
-		//serch jobs by title or location
-		Task<IEnumerable<Job>> SearchAsync(string? title = null, string? location = null);
+ 		Task<IEnumerable<JobResponseDto?>> GetByCompanyIdAsync(int companyId, int page, int pageSize);
+ 		Task<Job?> GetWithDetailsAsync(int jobId);
+  
+		Task<IEnumerable<JobResponseDto>> GetAllBySkillNameAsync(int page, int pageSize,string skill);
+
+		Task<IEnumerable<JobResponseDto>> SearchAsync(string? title = null,string? location = null,string? jobType = null,int? companyId = null,string? skill = null,int page = 1,int pageSize = 10);
+
+		Task<IEnumerable<JobResponseDto>> GetJobsForUserAsync(int userId,int page=1 ,int pageSize=15);
 	}
 }

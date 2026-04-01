@@ -17,15 +17,14 @@ namespace JobPlatformBackend.Domain.src.Entity
 		public required string HashPassword { get; set; }
 
 		public Role Role { get; set; }
-
+		
 		public bool Active { get; set; }
 
 		public bool IsDeleted { get; set; }
 
 		public string? PhoneNumber { get; set; }
 
-		public int? CompanyId { get; set; }
-
+ 
 		public string? ProfileImageUrl { get; set; }
 
 		public string? Headline { get; set; }
@@ -40,12 +39,9 @@ namespace JobPlatformBackend.Domain.src.Entity
 		public string? EmailVerificationCode { get; set; }
 		public DateTime? VerificationCodeExpiry { get; set; }
 		public bool IsEmailVerified { get; set; } = false;
-		public Company? Company { get; set; }
-
-		// الوظائف التي قدم عليها
-		public ICollection<Application> Applications { get; set; } = new List<Application>();
-
-		// مهارات المستخدم
+ 
+ 		public ICollection<Application> Applications { get; set; } = new List<Application>();
+		public ICollection<CompanyAdmin> CompanyAdmins { get; set; } = new List<CompanyAdmin>();
 		public ICollection<UserSkill> UserSkills { get; set; } = new List<UserSkill>();
 
 		// منشورات المستخدم

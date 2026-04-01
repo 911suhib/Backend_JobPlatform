@@ -1,321 +1,130 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Doroob\\",
+  "WorkspaceRootPath": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|d:\\doroob\\jobplatform\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|solutionrelative:jobplatform\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.business\\src\\services\\implementations\\jobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\implementations\\jobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.business\\src\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\services\\abstractions\\iverificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\abstractions\\iverificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|d:\\doroob\\jobplatformbackend.contracts\\contracts\\user\\verifycode\\verifyemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|solutionrelative:jobplatformbackend.contracts\\contracts\\user\\verifycode\\verifyemailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\services\\implementations\\verificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.business\\src\\services\\implementations\\verificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\implementations\\verificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\services\\implementations\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\implementations\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|d:\\doroob\\jobplatform\\controllers\\skillcontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|solutionrelative:jobplatform\\controllers\\skillcontorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|d:\\doroob\\jobplatform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|solutionrelative:jobplatform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|d:\\doroob\\jobplatformbackend.contracts\\contracts\\user\\shared\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|solutionrelative:jobplatformbackend.contracts\\contracts\\user\\shared\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.infrastructure\\src\\repository\\companyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\repository\\companyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\services\\implementations\\emailtemplateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\implementations\\emailtemplateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\services\\common\\sentemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\common\\sentemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|d:\\doroob\\jobplatformbackend.contracts\\contracts\\user\\create\\createuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|solutionrelative:jobplatformbackend.contracts\\contracts\\user\\create\\createuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\jobplatformbackend.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\jobplatformbackend.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\services\\abstractions\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\abstractions\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\services\\implementations\\skillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\implementations\\skillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\managers\\jwtmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\managers\\jwtmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suhib\\AppData\\Local\\SourceServer\\cd1bde80fe4c60d5761d8f6ee51d9cd95b5a278a5efb62e0db9f5956ae9218fe\\JobPlatform\\Controllers\\SkillContorller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|d:\\doroob\\jobplatform\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|solutionrelative:jobplatform\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|d:\\doroob\\jobplatformbackend.contracts\\contracts\\skill\\skilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|solutionrelative:jobplatformbackend.contracts\\contracts\\skill\\skilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|d:\\doroob\\jobplatformbackend.contracts\\contracts\\skill\\addskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|solutionrelative:jobplatformbackend.contracts\\contracts\\skill\\addskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\services\\implementations\\sanitizerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\implementations\\sanitizerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\services\\implementations\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\implementations\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|d:\\doroob\\jobplatformbackend.infrastructure\\src\\repository\\skillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\repository\\skillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\abstractions\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\abstractions\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\services\\abstractions\\iskillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\abstractions\\iskillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\services\\abstractions\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\abstractions\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|d:\\doroob\\jobplatform\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|solutionrelative:jobplatform\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|d:\\doroob\\jobplatform\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|solutionrelative:jobplatform\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|d:\\doroob\\jobplatformbackend.contracts\\contracts\\userskill\\userskilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|solutionrelative:jobplatformbackend.contracts\\contracts\\userskill\\userskilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\mappers\\dtomapperuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\mappers\\dtomapperuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|d:\\doroob\\jobplatformbackend.contracts\\contracts\\user\\getall\\userlistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|solutionrelative:jobplatformbackend.contracts\\contracts\\user\\getall\\userlistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|d:\\doroob\\jobplatformbackend.contracts\\contracts\\user\\getall\\usercredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|solutionrelative:jobplatformbackend.contracts\\contracts\\user\\getall\\usercredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|d:\\doroob\\jobplatformbackend.contracts\\contracts\\user\\getall\\getuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|solutionrelative:jobplatformbackend.contracts\\contracts\\user\\getall\\getuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\managers\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\managers\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|d:\\doroob\\jobplatformbackend.contracts\\contracts\\shared\\passswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|solutionrelative:jobplatformbackend.contracts\\contracts\\shared\\passswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|d:\\doroob\\jobplatform\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|solutionrelative:jobplatform\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|d:\\doroob\\jobplatformbackend.infrastructure\\src\\configuration\\postconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\configuration\\postconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|d:\\doroob\\jobplatformbackend.infrastructure\\src\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\userrefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\userrefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|d:\\doroob\\jobplatformbackend.business\\src\\services\\abstractions\\isanitizerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\abstractions\\isanitizerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|d:\\doroob\\jobplatform\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|solutionrelative:jobplatform\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|d:\\doroob\\jobplatform\\jobplatformbackend.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|solutionrelative:jobplatform\\jobplatformbackend.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\abstractions\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\abstractions\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|d:\\doroob\\jobplatform\\jobplatform.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|solutionrelative:jobplatform\\jobplatform.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|d:\\doroob\\jobplatform\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|solutionrelative:jobplatform\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\abstractions\\ijobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\abstractions\\ijobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\abstractions\\icompanyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatform.domain\\src\\abstractions\\icompanyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\abstractions\\icompanyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.infrastructure\\migrations\\20260401201436_mtm-companyanduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\migrations\\20260401201436_mtm-companyanduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\userskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\userskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.infrastructure\\migrations\\20260401201436_mtm-companyanduser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\migrations\\20260401201436_mtm-companyanduser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\jobskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\jobskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\baseenitity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\baseenitity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260317141842_EditJobSkill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|d:\\doroob\\jobplatformbackend.infrastructure\\src\\configuration\\jobskillconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\configuration\\jobskillconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\typejob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\typejob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\statusapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\statusapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\sharedenitity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\sharedenitity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\postlike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\postlike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\postcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\postcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|d:\\doroob\\jobplatform.domain\\src\\entity\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260317134655_CreateDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|d:\\doroob\\jobplatformbackend.infrastructure\\src\\configuration\\postlikeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\configuration\\postlikeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|d:\\doroob\\jobplatformbackend.infrastructure\\src\\configuration\\postcommentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\configuration\\postcommentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260317134127_CreateDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|d:\\doroob\\jobplatformbackend.infrastructure\\src\\configuration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\configuration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260317133632_CreateDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|d:\\doroob\\jobplatformbackend.infrastructure\\src\\configuration\\applicationconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\configuration\\applicationconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|d:\\doroob\\jobplatformbackend.infrastructure\\src\\configuration\\jobconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\configuration\\jobconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|d:\\doroob\\jobplatformbackend.infrastructure\\src\\configuration\\userskillconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\configuration\\userskillconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|d:\\doroob\\jobplatformbackend.infrastructure\\src\\configuration\\skillconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\configuration\\skillconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|d:\\doroob\\jobplatformbackend.infrastructure\\src\\configuration\\companyconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.infrastructure\\src\\configuration\\companyconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\configuration\\companyconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|d:\\doroob\\jobplatformbackend.infrastructure\\migrations\\20260317142754_createdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\migrations\\20260317142754_createdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.infrastructure\\src\\configuration\\jobskillconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\configuration\\jobskillconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|d:\\doroob\\jobplatformbackend.infrastructure\\migrations\\20260326163318_addrefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\migrations\\20260326163318_addrefreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.infrastructure\\src\\configuration\\postlikeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\configuration\\postlikeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.infrastructure\\src\\configuration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\configuration\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatform.domain\\src\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.infrastructure\\src\\configuration\\configcompanyadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\configuration\\configcompanyadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.infrastructure\\src\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatform.domain\\src\\entity\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.business\\src\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatform.domain\\src\\entity\\userskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\userskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatform\\controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|solutionrelative:jobplatform\\controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.contracts\\contracts\\jop\\jopresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|solutionrelative:jobplatformbackend.contracts\\contracts\\jop\\jopresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.business\\src\\services\\abstractions\\ijobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\services\\abstractions\\ijobservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.contracts\\contracts\\jop\\create\\createjobrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|solutionrelative:jobplatformbackend.contracts\\contracts\\jop\\create\\createjobrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatform.domain\\src\\entity\\typejob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\typejob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatform\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9AD767-935F-78CE-DA4B-1574F5A6819A}|JobPlatform\\JobPlatformBackend.API.csproj|solutionrelative:jobplatform\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.business\\src\\mappers\\dtomapperjop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\mappers\\dtomapperjop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.infrastructure\\src\\repository\\skillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\repository\\skillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatform.domain\\src\\abstractions\\iskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\abstractions\\iskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.business\\src\\mappers\\dtomapperuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F49312F-7E24-40F0-906E-F1759F4D8F3C}|JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj|solutionrelative:jobplatformbackend.business\\src\\mappers\\dtomapperuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatform.domain\\src\\entity\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FC54509-94D3-FEE6-D16C-D1A223AF016D}|JobPlatform.Domain\\JobPlatformBackend.Domain.csproj|solutionrelative:jobplatform.domain\\src\\entity\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.contracts\\contracts\\shared\\queryoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8344BC6B-FB5C-4273-AF75-9C9B3CA8E91F}|JobPlatformBackend.Contracts\\JobPlatformBackend.Contracts.csproj|solutionrelative:jobplatformbackend.contracts\\contracts\\shared\\queryoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|c:\\users\\suhib\\desktop\\dorobjobplatform\\jobplatformbackend.infrastructure\\src\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF29EBE-52BF-481A-BE3A-11AA0579E261}|JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj|solutionrelative:jobplatformbackend.infrastructure\\src\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -324,23 +133,9 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 18,
-          "SelectedChildIndex": 22,
+          "DockedWidth": 26,
+          "SelectedChildIndex": 24,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\AuthService.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Implementations\\AuthService.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\AuthService.cs",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Implementations\\AuthService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAnwCAAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T13:47:35.009Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -427,1017 +222,381 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "JobPlatform\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform\\Controllers\\AuthController.cs*",
-              "RelativeToolTip": "JobPlatform\\Controllers\\AuthController.cs*",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwDcAAAA+AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "VerificationService.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\src\\Services\\Implementations\\VerificationService.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Implementations\\VerificationService.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\src\\Services\\Implementations\\VerificationService.cs",
+              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Implementations\\VerificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T13:30:37.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T20:41:37.934Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "VerifyEmailRequest.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\User\\VerifyCode\\VerifyEmailRequest.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Contracts\\Contracts\\User\\VerifyCode\\VerifyEmailRequest.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\User\\VerifyCode\\VerifyEmailRequest.cs*",
-              "RelativeToolTip": "JobPlatformBackend.Contracts\\Contracts\\User\\VerifyCode\\VerifyEmailRequest.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA7AAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform\\Program.cs",
+              "RelativeDocumentMoniker": "JobPlatform\\Program.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform\\Program.cs",
+              "RelativeToolTip": "JobPlatform\\Program.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwDAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T19:26:01.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T19:00:19.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IVerificationService.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Abstractions\\IVerificationService.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Abstractions\\IVerificationService.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Abstractions\\IVerificationService.cs*",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Abstractions\\IVerificationService.cs*",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAYwBMAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\src\\Services\\Implementations\\AuthService.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Implementations\\AuthService.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\src\\Services\\Implementations\\AuthService.cs",
+              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Implementations\\AuthService.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAADgv2wAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T18:54:13.307Z",
+              "WhenOpened": "2026-04-01T17:05:12.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JobService.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\src\\Services\\Implementations\\JobService.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Implementations\\JobService.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\src\\Services\\Implementations\\JobService.cs",
+              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Implementations\\JobService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAvwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T15:42:02.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "VerificationService.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\VerificationService.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Implementations\\VerificationService.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\VerificationService.cs*",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Implementations\\VerificationService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAACiAAAAAAAAAA==",
+              "Title": "CompanyRepository.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Repository\\CompanyRepository.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Repository\\CompanyRepository.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Repository\\CompanyRepository.cs",
+              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Repository\\CompanyRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T18:35:42.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T20:33:07.834Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\EmailService.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Implementations\\EmailService.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\EmailService.cs",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Implementations\\EmailService.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAEwCcAAAACAAAAAAAAAA==",
+              "Title": "ICompanyRepository.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform.Domain\\src\\Abstractions\\ICompanyRepository.cs",
+              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Abstractions\\ICompanyRepository.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform.Domain\\src\\Abstractions\\ICompanyRepository.cs",
+              "RelativeToolTip": "JobPlatform.Domain\\src\\Abstractions\\ICompanyRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T17:03:57.689Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T20:32:05.363Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "SkillContorller.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform\\Controllers\\SkillContorller.cs",
-              "RelativeDocumentMoniker": "JobPlatform\\Controllers\\SkillContorller.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform\\Controllers\\SkillContorller.cs",
-              "RelativeToolTip": "JobPlatform\\Controllers\\SkillContorller.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
+              "Title": "20260401201436_MTM-companyanduser.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260401201436_MTM-companyanduser.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\Migrations\\20260401201436_MTM-companyanduser.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260401201436_MTM-companyanduser.cs",
+              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\Migrations\\20260401201436_MTM-companyanduser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T17:54:40.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T20:14:36.521Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform\\Program.cs",
-              "RelativeDocumentMoniker": "JobPlatform\\Program.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform\\Program.cs",
-              "RelativeToolTip": "JobPlatform\\Program.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAwwC0AAABGAAAAAAAAAA==",
+              "Title": "20260401201436_MTM-companyanduser.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260401201436_MTM-companyanduser.Designer.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\Migrations\\20260401201436_MTM-companyanduser.Designer.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260401201436_MTM-companyanduser.Designer.cs",
+              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\Migrations\\20260401201436_MTM-companyanduser.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T17:23:31.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T20:20:03.334Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "EmailTemplateService.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\EmailTemplateService.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Implementations\\EmailTemplateService.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\EmailTemplateService.cs",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Implementations\\EmailTemplateService.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAawGEAAABQAAAAAAAAAA==",
+              "Title": "JobSkillConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Configuration\\JobSkillConfiguration.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Configuration\\JobSkillConfiguration.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Configuration\\JobSkillConfiguration.cs",
+              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Configuration\\JobSkillConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T18:38:06.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T20:17:44.406Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\User\\Shared\\UserDto.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Contracts\\Contracts\\User\\Shared\\UserDto.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\User\\Shared\\UserDto.cs",
-              "RelativeToolTip": "JobPlatformBackend.Contracts\\Contracts\\User\\Shared\\UserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAAAAAAAAAAAA==",
+              "Title": "CompanyConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Configuration\\CompanyConfiguration.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Configuration\\CompanyConfiguration.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Configuration\\CompanyConfiguration.cs",
+              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Configuration\\CompanyConfiguration.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T10:32:59.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T20:03:46.048Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "SentEmail.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Common\\SentEmail.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Common\\SentEmail.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Common\\SentEmail.cs",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Common\\SentEmail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAOAAAAAAAAAA==",
+              "Title": "PostLikeConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Configuration\\PostLikeConfiguration.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Configuration\\PostLikeConfiguration.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Configuration\\PostLikeConfiguration.cs",
+              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Configuration\\PostLikeConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T18:30:49.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreateUserResponse.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\User\\Create\\CreateUserResponse.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Contracts\\Contracts\\User\\Create\\CreateUserResponse.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\User\\Create\\CreateUserResponse.cs",
-              "RelativeToolTip": "JobPlatformBackend.Contracts\\Contracts\\User\\Create\\CreateUserResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T13:31:22.234Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "JobPlatformBackend.Business",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj",
-              "RelativeToolTip": "JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-29T17:12:05.519Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IEmailService.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Abstractions\\IEmailService.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Abstractions\\IEmailService.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Abstractions\\IEmailService.cs",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Abstractions\\IEmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T17:04:40.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SkillService.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\SkillService.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Implementations\\SkillService.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\SkillService.cs",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Implementations\\SkillService.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAqwF0AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T18:04:48.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T20:17:39.147Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\User.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\User.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\User.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\User.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwDAAAAA7AAAAAAAAAA==",
+              "Title": "Company.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform.Domain\\src\\Entity\\Company.cs",
+              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\Company.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform.Domain\\src\\Entity\\Company.cs",
+              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\Company.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T10:34:19.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "SkillContorller.cs",
-              "DocumentMoniker": "C:\\Users\\suhib\\AppData\\Local\\SourceServer\\cd1bde80fe4c60d5761d8f6ee51d9cd95b5a278a5efb62e0db9f5956ae9218fe\\JobPlatform\\Controllers\\SkillContorller.cs",
-              "ToolTip": "C:\\Users\\suhib\\AppData\\Local\\SourceServer\\cd1bde80fe4c60d5761d8f6ee51d9cd95b5a278a5efb62e0db9f5956ae9218fe\\JobPlatform\\Controllers\\SkillContorller.cs [Read Only]",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAwwB0AAAACAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T15:29:38.33Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "JobPlatform\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform\\Controllers\\UserController.cs",
-              "RelativeToolTip": "JobPlatform\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAgwFIAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T17:06:05.252Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BadRequestException.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Exceptions\\BadRequestException.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Exceptions\\BadRequestException.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Exceptions\\BadRequestException.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Exceptions\\BadRequestException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T17:23:16.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T19:49:55.865Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "JwtManager.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Managers\\JwtManager.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Managers\\JwtManager.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Managers\\JwtManager.cs",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Managers\\JwtManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAIwCAAAAADAAAAAAAAAA==",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\src\\Services\\Implementations\\UserService.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Implementations\\UserService.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\src\\Services\\Implementations\\UserService.cs",
+              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Implementations\\UserService.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T14:04:03.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T16:10:42.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Configuration\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Configuration\\UserConfiguration.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Configuration\\UserConfiguration.cs",
+              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Configuration\\UserConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T20:10:04.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform.Domain\\src\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\User.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform.Domain\\src\\Entity\\User.cs",
+              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\User.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwBMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T19:49:40.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Database\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Database\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Database\\AppDbContext.cs",
+              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Database\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T20:05:13.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ConfigCompanyAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Configuration\\ConfigCompanyAdmin.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Configuration\\ConfigCompanyAdmin.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Configuration\\ConfigCompanyAdmin.cs",
+              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Configuration\\ConfigCompanyAdmin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T20:04:31.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserSkill.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform.Domain\\src\\Entity\\UserSkill.cs",
+              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\UserSkill.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform.Domain\\src\\Entity\\UserSkill.cs",
+              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\UserSkill.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T19:49:35.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "JobController.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform\\Controllers\\JobController.cs",
+              "RelativeDocumentMoniker": "JobPlatform\\Controllers\\JobController.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform\\Controllers\\JobController.cs",
+              "RelativeToolTip": "JobPlatform\\Controllers\\JobController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T19:04:53.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "JopResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Contracts\\Contracts\\Jop\\JopResponseDto.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Contracts\\Contracts\\Jop\\JopResponseDto.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Contracts\\Contracts\\Jop\\JopResponseDto.cs",
+              "RelativeToolTip": "JobPlatformBackend.Contracts\\Contracts\\Jop\\JopResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T19:39:44.273Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "SkillDto.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\Skill\\SkillDto.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Contracts\\Contracts\\Skill\\SkillDto.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\Skill\\SkillDto.cs",
-              "RelativeToolTip": "JobPlatformBackend.Contracts\\Contracts\\Skill\\SkillDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Title": "IJobService.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\src\\Services\\Abstractions\\IJobService.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Abstractions\\IJobService.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\src\\Services\\Abstractions\\IJobService.cs",
+              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Abstractions\\IJobService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T18:23:21.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T15:39:49.406Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "AddSkill.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\Skill\\AddSkill.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Contracts\\Contracts\\Skill\\AddSkill.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\Skill\\AddSkill.cs",
-              "RelativeToolTip": "JobPlatformBackend.Contracts\\Contracts\\Skill\\AddSkill.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAPAAAAAAAAAA==",
+              "Title": "CreateJobRequest.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Contracts\\Contracts\\Jop\\Create\\CreateJobRequest.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Contracts\\Contracts\\Jop\\Create\\CreateJobRequest.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Contracts\\Contracts\\Jop\\Create\\CreateJobRequest.cs",
+              "RelativeToolTip": "JobPlatformBackend.Contracts\\Contracts\\Jop\\Create\\CreateJobRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-29T15:06:22.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\UserService.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Implementations\\UserService.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\UserService.cs",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Implementations\\UserService.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAwwHYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T16:28:41.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "BaseService.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\BaseService.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Implementations\\BaseService.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\BaseService.cs",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Implementations\\BaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T11:40:02.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T17:10:10.805Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "SanitizerService.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\SanitizerService.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Implementations\\SanitizerService.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Implementations\\SanitizerService.cs",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Implementations\\SanitizerService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAUwCMAAAASAAAAAAAAAA==",
+              "Title": "TypeJob.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform.Domain\\src\\Entity\\TypeJob.cs",
+              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\TypeJob.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform.Domain\\src\\Entity\\TypeJob.cs",
+              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\TypeJob.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T15:12:11.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T19:26:08.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ISkillRepository.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform.Domain\\src\\Abstractions\\ISkillRepository.cs",
+              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Abstractions\\ISkillRepository.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform.Domain\\src\\Abstractions\\ISkillRepository.cs",
+              "RelativeToolTip": "JobPlatform.Domain\\src\\Abstractions\\ISkillRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T18:49:18.983Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
               "Title": "SkillRepository.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Repository\\SkillRepository.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Repository\\SkillRepository.cs",
               "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Repository\\SkillRepository.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Repository\\SkillRepository.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Repository\\SkillRepository.cs",
               "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Repository\\SkillRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAgAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowAgAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T18:08:22.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T18:27:42.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "IBaseRepository.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Abstractions\\IBaseRepository.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Abstractions\\IBaseRepository.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Abstractions\\IBaseRepository.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Abstractions\\IBaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "JobPlatform\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "JobPlatform\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T17:59:00.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T16:17:08.602Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "ISkillService.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Abstractions\\ISkillService.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Abstractions\\ISkillService.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Abstractions\\ISkillService.cs",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Abstractions\\ISkillService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAdAAAAAAAAAA==",
+              "Title": "DtoMapperUser.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\src\\Mappers\\DtoMapperUser.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Mappers\\DtoMapperUser.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\src\\Mappers\\DtoMapperUser.cs",
+              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Mappers\\DtoMapperUser.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAADYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T18:03:52.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T18:15:40.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DtoMapperJop.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\src\\Mappers\\DtoMapperJop.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Mappers\\DtoMapperJop.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\src\\Mappers\\DtoMapperJop.cs",
+              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Mappers\\DtoMapperJop.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T16:57:37.951Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Abstractions\\IUserService.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Abstractions\\IUserService.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Abstractions\\IUserService.cs",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Abstractions\\IUserService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBgAAAAAAAAAAAAAAA==",
+              "Title": "Skill.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform.Domain\\src\\Entity\\Skill.cs",
+              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\Skill.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform.Domain\\src\\Entity\\Skill.cs",
+              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\Skill.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T14:29:00.573Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "UserSkillDto.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\UserSkill\\UserSkillDto.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Contracts\\Contracts\\UserSkill\\UserSkillDto.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\UserSkill\\UserSkillDto.cs",
-              "RelativeToolTip": "JobPlatformBackend.Contracts\\Contracts\\UserSkill\\UserSkillDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-28T16:22:41.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T18:14:43.52Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform\\appsettings.json",
-              "RelativeDocumentMoniker": "JobPlatform\\appsettings.json",
-              "ToolTip": "D:\\Doroob\\JobPlatform\\appsettings.json",
-              "RelativeToolTip": "JobPlatform\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-26T14:10:57.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "DtoMapperUser.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Mappers\\DtoMapperUser.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Mappers\\DtoMapperUser.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Mappers\\DtoMapperUser.cs",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Mappers\\DtoMapperUser.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBEAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T18:13:44.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "GetUserRequest.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\User\\GetAll\\GetUserRequest.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Contracts\\Contracts\\User\\GetAll\\GetUserRequest.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\User\\GetAll\\GetUserRequest.cs",
-              "RelativeToolTip": "JobPlatformBackend.Contracts\\Contracts\\User\\GetAll\\GetUserRequest.cs",
+              "Title": "QueryOptions.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Contracts\\Contracts\\Shared\\QueryOptions.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Contracts\\Contracts\\Shared\\QueryOptions.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Contracts\\Contracts\\Shared\\QueryOptions.cs",
+              "RelativeToolTip": "JobPlatformBackend.Contracts\\Contracts\\Shared\\QueryOptions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T14:18:23.1Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "UserCredentials.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\User\\GetAll\\UserCredentials.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Contracts\\Contracts\\User\\GetAll\\UserCredentials.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\User\\GetAll\\UserCredentials.cs",
-              "RelativeToolTip": "JobPlatformBackend.Contracts\\Contracts\\User\\GetAll\\UserCredentials.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T14:00:10.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "UserListResponse.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\User\\GetAll\\UserListResponse.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Contracts\\Contracts\\User\\GetAll\\UserListResponse.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\User\\GetAll\\UserListResponse.cs",
-              "RelativeToolTip": "JobPlatformBackend.Contracts\\Contracts\\User\\GetAll\\UserListResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T14:18:31.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "JwtOptions.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Managers\\JwtOptions.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Managers\\JwtOptions.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Managers\\JwtOptions.cs",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Managers\\JwtOptions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T14:09:15.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "PassswordService.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\Shared\\PassswordService.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Contracts\\Contracts\\Shared\\PassswordService.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Contracts\\Contracts\\Shared\\PassswordService.cs",
-              "RelativeToolTip": "JobPlatformBackend.Contracts\\Contracts\\Shared\\PassswordService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T13:48:07.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "NotFoundException.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Exceptions\\NotFoundException.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Exceptions\\NotFoundException.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Exceptions\\NotFoundException.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Exceptions\\NotFoundException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T17:25:04.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 79,
-              "Title": "20260326163318_addRefreshToken.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\Migrations\\20260326163318_addRefreshToken.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\Migrations\\20260326163318_addRefreshToken.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\Migrations\\20260326163318_addRefreshToken.cs",
-              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\Migrations\\20260326163318_addRefreshToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T16:33:19.055Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "PostConfiguration.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\PostConfiguration.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Configuration\\PostConfiguration.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\PostConfiguration.cs",
-              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Configuration\\PostConfiguration.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAqwBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T14:18:15.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Database\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Database\\AppDbContext.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Database\\AppDbContext.cs",
-              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Database\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T14:18:18.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "UserRefreshToken.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\UserRefreshToken.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\UserRefreshToken.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\UserRefreshToken.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\UserRefreshToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T15:24:27.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "ISanitizerService.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Abstractions\\ISanitizerService.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Business\\src\\Services\\Abstractions\\ISanitizerService.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Business\\src\\Services\\Abstractions\\ISanitizerService.cs",
-              "RelativeToolTip": "JobPlatformBackend.Business\\src\\Services\\Abstractions\\ISanitizerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T15:02:10.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "ExceptionMiddleware.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform\\Middleware\\ExceptionMiddleware.cs",
-              "RelativeDocumentMoniker": "JobPlatform\\Middleware\\ExceptionMiddleware.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform\\Middleware\\ExceptionMiddleware.cs",
-              "RelativeToolTip": "JobPlatform\\Middleware\\ExceptionMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T14:23:59.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "JobPlatformBackend.API.csproj",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform\\JobPlatformBackend.API.csproj",
-              "RelativeDocumentMoniker": "JobPlatform\\JobPlatformBackend.API.csproj",
-              "ToolTip": "D:\\Doroob\\JobPlatform\\JobPlatformBackend.API.csproj",
-              "RelativeToolTip": "JobPlatform\\JobPlatformBackend.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-26T13:28:29.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Abstractions\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Abstractions\\IUserRepository.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Abstractions\\IUserRepository.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Abstractions\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T16:35:13.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "JobPlatform\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Doroob\\JobPlatform\\Properties\\launchSettings.json",
-              "RelativeToolTip": "JobPlatform\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-25T14:53:52.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "JobPlatform.http",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform\\JobPlatform.http",
-              "RelativeDocumentMoniker": "JobPlatform\\JobPlatform.http",
-              "ToolTip": "D:\\Doroob\\JobPlatform\\JobPlatform.http",
-              "RelativeToolTip": "JobPlatform\\JobPlatform.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-03-25T14:51:12.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "JobPlatform\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "JobPlatform\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T07:55:15.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "IJobRepository.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Abstractions\\IJobRepository.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Abstractions\\IJobRepository.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Abstractions\\IJobRepository.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Abstractions\\IJobRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T14:59:44.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 77,
-              "Title": "CompanyConfiguration.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\CompanyConfiguration.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Configuration\\CompanyConfiguration.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\CompanyConfiguration.cs",
-              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Configuration\\CompanyConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T20:00:00.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "ICompanyRepository.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Abstractions\\ICompanyRepository.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Abstractions\\ICompanyRepository.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Abstractions\\ICompanyRepository.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Abstractions\\ICompanyRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T14:58:42.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "Company.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\Company.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\Company.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\Company.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\Company.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T19:24:25.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "UserSkill.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\UserSkill.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\UserSkill.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\UserSkill.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\UserSkill.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T14:09:26.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "JobSkill.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\JobSkill.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\JobSkill.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\JobSkill.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\JobSkill.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T13:39:31.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "Skill.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\Skill.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\Skill.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\Skill.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\Skill.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T15:32:17.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "Job.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\Job.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\Job.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\Job.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\Job.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAowBAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T19:20:39.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "Application.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\Application.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\Application.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\Application.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\Application.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T13:33:23.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 78,
-              "Title": "20260317142754_CreateDb.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\Migrations\\20260317142754_CreateDb.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\Migrations\\20260317142754_CreateDb.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\Migrations\\20260317142754_CreateDb.cs",
-              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\Migrations\\20260317142754_CreateDb.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T14:27:54.373Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "BaseEnitity.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\BaseEnitity.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\BaseEnitity.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\BaseEnitity.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\BaseEnitity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T14:08:34.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "20260317141842_EditJobSkill.cs",
-              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260317141842_EditJobSkill.cs",
-              "ToolTip": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260317141842_EditJobSkill.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T14:18:42.433Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "JobSkillConfiguration.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\JobSkillConfiguration.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Configuration\\JobSkillConfiguration.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\JobSkillConfiguration.cs",
-              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Configuration\\JobSkillConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T13:39:39.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "TypeJob.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\TypeJob.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\TypeJob.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\TypeJob.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\TypeJob.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T14:00:34.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "StatusApplication.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\StatusApplication.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\StatusApplication.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\StatusApplication.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\StatusApplication.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T14:09:21.977Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "SharedEnitity.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\SharedEnitity.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\SharedEnitity.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\SharedEnitity.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\SharedEnitity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T14:09:07.048Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "Role.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\Role.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\Role.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\Role.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T14:09:02.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "PostLike.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\PostLike.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\PostLike.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\PostLike.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\PostLike.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T14:08:47.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "PostComment.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\PostComment.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\PostComment.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\PostComment.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\PostComment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T14:06:47.924Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "Post.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\Post.cs",
-              "RelativeDocumentMoniker": "JobPlatform.Domain\\src\\Entity\\Post.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatform.Domain\\src\\Entity\\Post.cs",
-              "RelativeToolTip": "JobPlatform.Domain\\src\\Entity\\Post.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T19:25:32.765Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "20260317134655_CreateDB.cs",
-              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260317134655_CreateDB.cs",
-              "ToolTip": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260317134655_CreateDB.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T13:46:55.97Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
-              "Title": "PostLikeConfiguration.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\PostLikeConfiguration.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Configuration\\PostLikeConfiguration.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\PostLikeConfiguration.cs",
-              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Configuration\\PostLikeConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T13:44:50.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "PostCommentConfiguration.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\PostCommentConfiguration.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Configuration\\PostCommentConfiguration.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\PostCommentConfiguration.cs",
-              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Configuration\\PostCommentConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T13:38:30.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "20260317134127_CreateDB.cs",
-              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260317134127_CreateDB.cs",
-              "ToolTip": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260317134127_CreateDB.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T13:41:28.001Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 71,
-              "Title": "UserConfiguration.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\UserConfiguration.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Configuration\\UserConfiguration.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\UserConfiguration.cs",
-              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Configuration\\UserConfiguration.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAwwFYAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T18:55:09.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 72,
-              "Title": "20260317133632_CreateDB.cs",
-              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260317133632_CreateDB.cs",
-              "ToolTip": "C:\\Users\\suhib\\Desktop\\FinalProject\\JobPlatform\\JobPlatformBackend.Infrastructure\\Migrations\\20260317133632_CreateDB.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T13:36:32.699Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 73,
-              "Title": "ApplicationConfiguration.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\ApplicationConfiguration.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Configuration\\ApplicationConfiguration.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\ApplicationConfiguration.cs",
-              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Configuration\\ApplicationConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBZwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T13:35:19.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 74,
-              "Title": "JobConfiguration.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\JobConfiguration.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Configuration\\JobConfiguration.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\JobConfiguration.cs",
-              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Configuration\\JobConfiguration.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAowC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T15:12:37.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T15:34:04.74Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 30,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatform\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "JobPlatform\\appsettings.Development.json",
-              "ToolTip": "D:\\Doroob\\JobPlatform\\appsettings.Development.json",
-              "RelativeToolTip": "JobPlatform\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-17T13:11:31.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 75,
-              "Title": "UserSkillConfiguration.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\UserSkillConfiguration.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Configuration\\UserSkillConfiguration.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\UserSkillConfiguration.cs",
-              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Configuration\\UserSkillConfiguration.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAowB8AAAAAAAAAAAAAAA==",
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Repository\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Repository\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\src\\Repository\\BaseRepository.cs",
+              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Repository\\BaseRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T15:36:15.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 76,
-              "Title": "SkillConfiguration.cs",
-              "DocumentMoniker": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\SkillConfiguration.cs",
-              "RelativeDocumentMoniker": "JobPlatformBackend.Infrastructure\\src\\Configuration\\SkillConfiguration.cs",
-              "ToolTip": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\src\\Configuration\\SkillConfiguration.cs",
-              "RelativeToolTip": "JobPlatformBackend.Infrastructure\\src\\Configuration\\SkillConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T15:35:23.947Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T13:57:52.526Z"
             }
           ]
         },
         {
-          "DockedWidth": 382,
+          "DockedWidth": 18,
           "SelectedChildIndex": -1,
           "Children": [
             {

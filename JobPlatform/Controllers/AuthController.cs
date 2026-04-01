@@ -76,6 +76,16 @@ namespace JobPlatformBackend.API.Controllers
 			return BadRequest("الرمز غير صحيح أو انتهت صلاحيته");
 		}
 
+		[HttpPost("update-password")]
+		public async Task<IActionResult> UpdatePassword(UpdatePasswordRequest request)
+		{
+			var check = await _verification.UpdatedPassword(request);
+			if (!check)
+				return BadRequest("حدث خطأ أثناء تحديث كلمة المرور");
+			return Ok(new { message = "تم تحديث كلمة المرور بنجاح، يمكنك تسجيل الدخول الآن 🚀" });
+		}
+
+
 		[HttpPost("reset-password-final")]
 		public async Task<IActionResult> ResetPasswordFinal([FromBody] ResetPasswordFinalRequest request)
 		{

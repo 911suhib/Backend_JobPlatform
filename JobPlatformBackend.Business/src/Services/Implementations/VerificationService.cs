@@ -1,5 +1,6 @@
 ﻿using JobPlatformBackend.Business.src.Services.Abstractions;
 using JobPlatformBackend.Contracts.Contracts.Shared;
+using JobPlatformBackend.Contracts.Contracts.User.VerifyCode;
 using JobPlatformBackend.Domain.src.Abstractions;
 using JobPlatformBackend.Domain.src.Entity;
 using JobPlatformBackend.Domain.src.Exceptions;
@@ -185,5 +186,29 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 			await _userRepository.SaveChangesAsync();
 			return true;
 		}
+
+		public async Task<bool> UpdatedPassword(UpdatePasswordRequest request)
+		{
+			var user = await _userRepository.GetUserByEmailAsync(request.Email);
+
+			if (user == null)
+				return false;
+
+			var check = PassswordService.VerifyPassword( user.HashPassword, request.OldPassword);
+
+			if (!check)
+				return false;
+
+			var newPassword = PassswordService.HashPassword(request.NewPassword);
+
+			user.HashPassword = newPassword;
+			await _userRepository.SaveChangesAsync();
+
+			return true;
+
+		}
+		
+
+		
 	}
 }

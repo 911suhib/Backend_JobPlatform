@@ -65,11 +65,7 @@ namespace JobPlatformBackend.Infrastructure.src.Configuration
 			builder.Property(u => u.Role)
 				.IsRequired();
 
-			// Relationship with Company
-			builder.HasOne(u => u.Company)
-				.WithMany(c => c.Admins)
-				.HasForeignKey(u => u.CompanyId)
-				.OnDelete(DeleteBehavior.SetNull);
+			 
 
 			// Relationships
 			builder.HasMany(u => u.Posts)

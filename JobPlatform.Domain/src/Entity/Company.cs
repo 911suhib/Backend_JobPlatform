@@ -8,6 +8,9 @@
 		public ICollection<User> Admins { get; set; }=new List<User>();
 
 		public ICollection<Job> Jobs { get; set; }= new List<Job>();
+		public ICollection<CompanyAdmin> CompanyAdmins { get; set; } = new List<CompanyAdmin>();
+
+ 
 	}
 
 }

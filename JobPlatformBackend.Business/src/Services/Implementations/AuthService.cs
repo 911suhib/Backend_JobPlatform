@@ -110,8 +110,7 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 					Location = sanitizedDto.Location,
 					About = sanitizedDto.About,
 					CoverImageUrl = sanitizedDto.CoverImageUrl,
-					CompanyId = sanitizedDto.CompanyId,
-					Role = Role.User,
+ 					Role = Role.User,
 					Active = true,
 					IsDeleted = false,
 

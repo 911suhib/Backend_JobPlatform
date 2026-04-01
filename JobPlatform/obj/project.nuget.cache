@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iShbpqB6P2g=",
+  "dgSpecHash": "HV6qIaiHu1Q=",
   "success": true,
-  "projectFilePath": "D:\\Doroob\\JobPlatform\\JobPlatformBackend.API.csproj",
+  "projectFilePath": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform\\JobPlatformBackend.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\suhib\\.nuget\\packages\\anglesharp\\0.17.1\\anglesharp.0.17.1.nupkg.sha512",
     "C:\\Users\\suhib\\.nuget\\packages\\anglesharp.css\\0.17.0\\anglesharp.css.0.17.0.nupkg.sha512",

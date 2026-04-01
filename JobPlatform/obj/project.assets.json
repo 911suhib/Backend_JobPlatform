@@ -1704,6 +1704,9 @@
       "JobPlatformBackend.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "JobPlatformBackend.Contracts": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/JobPlatformBackend.Domain.dll": {}
         },
@@ -1715,6 +1718,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "JobPlatformBackend.Contracts": "1.0.0",
           "JobPlatformBackend.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0"
         },
@@ -4685,11 +4689,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Doroob\\JobPlatform\\JobPlatformBackend.API.csproj",
+      "projectUniqueName": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform\\JobPlatformBackend.API.csproj",
       "projectName": "JobPlatformBackend.API",
-      "projectPath": "D:\\Doroob\\JobPlatform\\JobPlatformBackend.API.csproj",
+      "projectPath": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform\\JobPlatformBackend.API.csproj",
       "packagesPath": "C:\\Users\\suhib\\.nuget\\packages\\",
-      "outputPath": "D:\\Doroob\\JobPlatform\\obj\\",
+      "outputPath": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4711,11 +4715,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Doroob\\JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj": {
-              "projectPath": "D:\\Doroob\\JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj"
+            "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj": {
+              "projectPath": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Business\\JobPlatformBackend.Business.csproj"
             },
-            "D:\\Doroob\\JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj": {
-              "projectPath": "D:\\Doroob\\JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj"
+            "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatformBackend.Infrastructure\\JobPlatformBackend.Infrastructure.csproj"
             }
           }
         }

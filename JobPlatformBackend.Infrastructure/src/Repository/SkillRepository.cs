@@ -44,6 +44,20 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
  		public void Delete(Skill skill)
 		{
 			_skills.Remove(skill);
+		 
+		}
+
+		public async Task<List<Skill>> GetByNamesAsync(List<string> names)
+		{
+			var normalized = names.Select(n => n.ToLower()).ToList();
+
+			return await _context.Skills
+				.Where(s => normalized.Contains(s.Name.ToLower()))
+				.ToListAsync();
+		}
+		public async Task AddRangeAsync(List<Skill> skills)
+		{
+			await _skills.AddRangeAsync(skills);
 		}
 	}
 }

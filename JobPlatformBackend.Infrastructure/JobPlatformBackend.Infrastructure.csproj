@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\JobPlatform.Domain\JobPlatformBackend.Domain.csproj" />
+    <ProjectReference Include="..\JobPlatformBackend.Contracts\JobPlatformBackend.Contracts.csproj" />
   </ItemGroup>
 
  

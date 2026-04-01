@@ -1,4 +1,5 @@
-﻿using JobPlatformBackend.Domain.src.Entity;
+﻿using JobPlatformBackend.Contracts.Contracts.User.VerifyCode;
+using JobPlatformBackend.Domain.src.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +24,6 @@ namespace JobPlatformBackend.Business.src.Services.Abstractions
 		 Task<bool> ValidateResetCodeAsync(string email, string otp);
 
 		Task<bool> VerifyEmailCodeAsync(User user, string otp);
-
-
+		Task<bool> UpdatedPassword(UpdatePasswordRequest request);
 	}
 }
