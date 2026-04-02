@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U6IAWG3RtS4=",
+  "dgSpecHash": "82cswEpTQKY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\suhib\\Desktop\\DorobJobplatform\\JobPlatform.Domain\\JobPlatformBackend.Domain.csproj",
+  "projectFilePath": "C:\\LastVDorob\\JobPlatform.Domain\\JobPlatformBackend.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\suhib\\.nuget\\packages\\bcrypt.net-next\\4.1.0\\bcrypt.net-next.4.1.0.nupkg.sha512",
     "C:\\Users\\suhib\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.25\\microsoft.windowsdesktop.app.ref.8.0.25.nupkg.sha512",

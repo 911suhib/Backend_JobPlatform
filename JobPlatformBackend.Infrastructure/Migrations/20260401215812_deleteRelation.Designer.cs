@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JobPlatformBackend.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260326163318_addRefreshToken")]
-    partial class addRefreshToken
+    [Migration("20260401215812_deleteRelation")]
+    partial class deleteRelation
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -88,6 +88,30 @@ namespace JobPlatformBackend.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Companies", (string)null);
+                });
+
+            modelBuilder.Entity("JobPlatformBackend.Domain.src.Entity.CompanyAdmin", b =>
+                {
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CompanyId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("AssignedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserId", "CompanyId");
+
+                    b.HasIndex("CompanyId");
+
+                    b.ToTable("CompanyAdmins");
                 });
 
             modelBuilder.Entity("JobPlatformBackend.Domain.src.Entity.Job", b =>
@@ -420,6 +444,25 @@ namespace JobPlatformBackend.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("JobPlatformBackend.Domain.src.Entity.CompanyAdmin", b =>
+                {
+                    b.HasOne("JobPlatformBackend.Domain.src.Entity.Company", "Company")
+                        .WithMany("CompanyAdmins")
+                        .HasForeignKey("CompanyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("JobPlatformBackend.Domain.src.Entity.User", "User")
+                        .WithMany("CompanyAdmins")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Company");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("JobPlatformBackend.Domain.src.Entity.Job", b =>
                 {
                     b.HasOne("JobPlatformBackend.Domain.src.Entity.Company", "Company")
@@ -501,12 +544,9 @@ namespace JobPlatformBackend.Infrastructure.Migrations
 
             modelBuilder.Entity("JobPlatformBackend.Domain.src.Entity.User", b =>
                 {
-                    b.HasOne("JobPlatformBackend.Domain.src.Entity.Company", "Company")
+                    b.HasOne("JobPlatformBackend.Domain.src.Entity.Company", null)
                         .WithMany("Admins")
-                        .HasForeignKey("CompanyId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
-                    b.Navigation("Company");
+                        .HasForeignKey("CompanyId");
                 });
 
             modelBuilder.Entity("JobPlatformBackend.Domain.src.Entity.UserRefreshToken", b =>
@@ -543,6 +583,8 @@ namespace JobPlatformBackend.Infrastructure.Migrations
                 {
                     b.Navigation("Admins");
 
+                    b.Navigation("CompanyAdmins");
+
                     b.Navigation("Jobs");
                 });
 
@@ -570,6 +612,8 @@ namespace JobPlatformBackend.Infrastructure.Migrations
             modelBuilder.Entity("JobPlatformBackend.Domain.src.Entity.User", b =>
                 {
                     b.Navigation("Applications");
+
+                    b.Navigation("CompanyAdmins");
 
                     b.Navigation("PostComments");
 

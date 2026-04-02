@@ -2,6 +2,8 @@
 using JobPlatformBackend.Business.src.Services.Abstractions;
 using JobPlatformBackend.Contracts.Contracts.Jop;
 using JobPlatformBackend.Contracts.Contracts.Jop.Create;
+using JobPlatformBackend.Contracts.Contracts.Jop.Get;
+using JobPlatformBackend.Contracts.Contracts.Shared;
 using JobPlatformBackend.Domain.src.Abstractions;
 using JobPlatformBackend.Domain.src.Entity;
 using JobPlatformBackend.Domain.src.Exceptions;
@@ -24,7 +26,7 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 		private readonly ICompanyRepository _companyRepository;
 		private readonly ISkillRepository _skillRepository;
 		private readonly IUserRepository _userRepository;
-		public JobService(ISkillRepository skillRepository,IUserRepository userRepository, ICompanyRepository companyRepository, IJobRepository jobRepository, ILogger<JobService> logger, ISanitizerService sanitizerService)
+		public JobService(ISkillRepository skillRepository, IUserRepository userRepository, ICompanyRepository companyRepository, IJobRepository jobRepository, ILogger<JobService> logger, ISanitizerService sanitizerService)
 		{
 
 			_jobRepository = jobRepository;
@@ -33,9 +35,9 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 			_companyRepository = companyRepository;
 			_skillRepository = skillRepository;
 			_userRepository = userRepository;
-			
+
 		}
-		public async Task<JobResponseDto> CreatJobAsync(CreateJobRequest request,int currentUserId)
+		public async Task<JobResponseDto> CreatJobAsync(CreateJobRequest request, int currentUserId)
 		{
 			var sanitizedDto = _sanitizerService.SanitizeDto(request);
 			var Company = await _companyRepository.GetByIdAsync(request.CompanyId);
@@ -49,11 +51,11 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 			{
 				throw new BadRequestException("User not found");
 			}
-			//var isAuthorized = await _companyRepository.IsUserAdminOfCompanyAsync(request.CompanyId, currentUserId);
-			//if (!isAuthorized)
-			//{
-			//	throw new UnauthorizedAccessException("You are not Authorize by this company");
-			//}
+			var isAuthorized = await _companyRepository.IsUserAdminOfCompanyAsync(request.CompanyId, currentUserId);
+			if (!isAuthorized)
+			{
+				throw new UnauthorizedAccessException("You are not Authorize by this company");
+			}
 
 
 			if (string.IsNullOrWhiteSpace(sanitizedDto.Title))
@@ -93,8 +95,7 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 				try
 				{
 					await _skillRepository.AddRangeAsync(newSkills);
-					await _skillRepository.SaveChangesAsync();
-				}
+ 				}
 				catch
 				{
 					newSkills = await _skillRepository.GetByNamesAsync(newSkillsNames);
@@ -117,6 +118,53 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 			await _jobRepository.AddAsync(jobEntity);
 			await _jobRepository.SaveChangesAsync();
 			return jobEntity.ToResponse();
+		}
+
+
+		public async Task<PagedResponseDto<JobResponseDto>> GetAllJobsBySkillNameAsync(GetBySkillNameDto getBySkill)
+		{
+			int pagesize = getBySkill.pageSize, page = getBySkill.page;
+
+			if (getBySkill.page <= 0) page = 1;
+			if (getBySkill.pageSize <= 0) pagesize = 10;
+
+			var (items, totalCount) = await _jobRepository.GetAllBySkillNameAsync(page, pagesize, getBySkill.skill);
+			return new PagedResponseDto<JobResponseDto>
+			{
+				Items = items,
+				TotalCount = totalCount,
+				PageNumber = page,
+				PageSize = pagesize,
+			};
+		}
+
+		public async Task<PagedResponseDto<JobResponseDto>> GetAllJobsByCompanyIdAsync(GetByCompanyIdDto getByCompanyId)
+		{
+			var company = await _companyRepository.GetByIdAsync(getByCompanyId.companyId);
+			if (company == null)
+			{
+				throw new BadRequestException("Company not found");
+			}
+
+			int pagesize = getByCompanyId.pageSize, page = getByCompanyId.page;
+			if (getByCompanyId.page <= 0) page = 1;
+			if (getByCompanyId.pageSize <= 0) pagesize = 10;
+			var (items, totalCount) = await _jobRepository.GetByCompanyIdAsync(getByCompanyId.companyId, page, pagesize);
+			return new PagedResponseDto<JobResponseDto>
+			{
+				Items = items,
+				TotalCount = totalCount,
+				PageNumber = page,
+				PageSize = pagesize,
+			};
+		}
+		public async Task<JobResponseDto> GetJobById(int id)
+		{
+			var job = await _jobRepository.GetByIdAsync(id);
+			if (job == null)
+				throw new BadRequestException("This job is not exist");
+
+			return job.ToResponse();
 		}
 	}
 }

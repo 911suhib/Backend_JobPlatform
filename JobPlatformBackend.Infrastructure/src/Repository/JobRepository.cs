@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace JobPlatformBackend.Infrastructure.src.Repository
 {
@@ -25,15 +26,17 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 			_job = _context.Set<Job>();
 		}
 
-		public async Task<IEnumerable<JobResponseDto>> GetAllBySkillNameAsync(int page, int pageSize, string skill)
+		public async Task<(IEnumerable<JobResponseDto>Items,int TotalCount)> GetAllBySkillNameAsync(int page, int pageSize, string skill)
 		{
-			var jobs=await _job.AsQueryable()
-				.Where(j => j.JobSkills.Any(js => EF.Functions.Like(js.Skill.Name,$"%{skill}")))
-				.OrderBy(j => j.CreatedAt)
+			var query = _job.AsNoTracking().Where(j=>j.JobSkills.Any(js => EF.Functions.Like(js.Skill.Name, $"%{skill}%")));
+
+			var totalCount = await query.CountAsync();
+
+			var jobs= await query
+				.OrderByDescending(j => j.CreatedAt)
 				.Skip((page - 1) * pageSize)
 				.Take(pageSize)
-				.Select(x => new JobResponseDto
-				(
+				.Select(x => new JobResponseDto(
 					x.Id,
 					x.Title,
 					x.Description,
@@ -46,14 +49,20 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 					x.JobSkills.Select(js => js.Skill.Name).ToList(),
 					x.Applications.Count(),
 					x.CreatedAt
-				)).ToListAsync();
-			return jobs;
+				))
+				.ToListAsync();
+			return (jobs,totalCount);
 		}
 
-		public async Task<IEnumerable<JobResponseDto>> GetByCompanyIdAsync(int companyId,int page,int pageSize)
+		public async Task<(IEnumerable<JobResponseDto>Items,int TotalCount)> GetByCompanyIdAsync(int companyId,int page,int pageSize)
 		{
-			var companies =await _job.AsQueryable().Where(j => j.CompanyId == companyId)
-				.OrderBy(j=>j.CreatedAt).Skip((page - 1) * pageSize).Take(pageSize)
+			var query = _job.AsNoTracking().Where(j => j.CompanyId == companyId);
+
+			var totalCount = await query.CountAsync();
+
+
+			var companies =await query
+				.OrderByDescending(j=>j.CreatedAt).Skip((page - 1) * pageSize).Take(pageSize)
 				.Select(
 				x => new JobResponseDto
 				(
@@ -72,7 +81,8 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 				)
 				).ToListAsync();
 
-			return companies;
+
+			return (companies,totalCount);
 		}
 
 		public async Task<IEnumerable<JobResponseDto>> GetJobsForUserAsync(int userId, int page,int pageSize)

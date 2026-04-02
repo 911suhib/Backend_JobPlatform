@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JobPlatformBackend.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260401201436_MTM-companyanduser")]
-    partial class MTMcompanyanduser
+    [Migration("20260401220509_deleteRelationcc")]
+    partial class deleteRelationcc
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -306,9 +306,6 @@ namespace JobPlatformBackend.Infrastructure.Migrations
                         .HasColumnType("bit")
                         .HasDefaultValue(true);
 
-                    b.Property<int?>("CompanyId")
-                        .HasColumnType("int");
-
                     b.Property<string>("CoverImageUrl")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
@@ -365,8 +362,6 @@ namespace JobPlatformBackend.Infrastructure.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CompanyId");
 
                     b.HasIndex("Email")
                         .IsUnique();
@@ -542,13 +537,6 @@ namespace JobPlatformBackend.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("JobPlatformBackend.Domain.src.Entity.User", b =>
-                {
-                    b.HasOne("JobPlatformBackend.Domain.src.Entity.Company", null)
-                        .WithMany("Admins")
-                        .HasForeignKey("CompanyId");
-                });
-
             modelBuilder.Entity("JobPlatformBackend.Domain.src.Entity.UserRefreshToken", b =>
                 {
                     b.HasOne("JobPlatformBackend.Domain.src.Entity.User", "User")
@@ -581,8 +569,6 @@ namespace JobPlatformBackend.Infrastructure.Migrations
 
             modelBuilder.Entity("JobPlatformBackend.Domain.src.Entity.Company", b =>
                 {
-                    b.Navigation("Admins");
-
                     b.Navigation("CompanyAdmins");
 
                     b.Navigation("Jobs");
