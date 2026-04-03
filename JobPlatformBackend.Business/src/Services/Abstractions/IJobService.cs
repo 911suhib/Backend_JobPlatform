@@ -1,6 +1,7 @@
 ﻿using JobPlatformBackend.Contracts.Contracts.Jop;
 using JobPlatformBackend.Contracts.Contracts.Jop.Create;
 using JobPlatformBackend.Contracts.Contracts.Jop.Get;
+using JobPlatformBackend.Contracts.Contracts.Jop.Update;
 using JobPlatformBackend.Contracts.Contracts.Shared;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,8 @@ namespace JobPlatformBackend.Business.src.Services.Abstractions
 	public interface IJobService
 	{
 		Task<JobResponseDto> CreatJobAsync(CreateJobRequest request,int userId);
+		Task DeleteJobAsync(int idJob, int adminId);
+		Task EditJobAsync(int jobId, int adminId, UpdateRequestDto request);
 		Task<PagedResponseDto<JobResponseDto>> GetAllJobsByCompanyIdAsync(GetByCompanyIdDto getByCompanyId);
 		Task<PagedResponseDto<JobResponseDto>> GetAllJobsBySkillNameAsync(GetBySkillNameDto getBySkill);
 		Task<JobResponseDto> GetJobById(int id);

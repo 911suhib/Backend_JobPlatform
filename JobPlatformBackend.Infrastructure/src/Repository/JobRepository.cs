@@ -135,6 +135,12 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 
 
 		}
+		public async Task<Job?> GetJobWithId(int id)
+		{
+			var job = await _job.Include(x => x.JobSkills).ThenInclude(js => js.Skill)
+				.FirstOrDefaultAsync(j => j.Id == id);
+			return job;
+		}
 
 		public async Task<Job?> GetWithDetailsAsync(int jobId)
 		{
@@ -192,6 +198,15 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 				.ToListAsync();
 
 			return jobs;
+		}
+
+		public async Task<List<Skill>> GetByNamesAsync(List<string> names)
+		{
+ 			var lowerNames = names.Select(n => n.ToLower()).ToList();
+
+			return await _context.Skills
+				.Where(s => lowerNames.Contains(s.Name.ToLower()))
+				.ToListAsync();
 		}
 	}
 }

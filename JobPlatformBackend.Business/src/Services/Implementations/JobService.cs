@@ -3,15 +3,18 @@ using JobPlatformBackend.Business.src.Services.Abstractions;
 using JobPlatformBackend.Contracts.Contracts.Jop;
 using JobPlatformBackend.Contracts.Contracts.Jop.Create;
 using JobPlatformBackend.Contracts.Contracts.Jop.Get;
+using JobPlatformBackend.Contracts.Contracts.Jop.Update;
 using JobPlatformBackend.Contracts.Contracts.Shared;
 using JobPlatformBackend.Domain.src.Abstractions;
 using JobPlatformBackend.Domain.src.Entity;
 using JobPlatformBackend.Domain.src.Exceptions;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.Json;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -160,11 +163,118 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 		}
 		public async Task<JobResponseDto> GetJobById(int id)
 		{
-			var job = await _jobRepository.GetByIdAsync(id);
-			if (job == null)
+			var job = await _jobRepository.Query()
+		.Where(x => x.Id == id)
+		.Select(job => new JobResponseDto(
+			job.Id,
+			job.Title,
+			job.Description,
+			job.Salary,
+			job.Location,
+			job.TypeJop.ToString(),
+			job.ExperieceLevel.ToString(),
+			job.CompanyId,
+			job.Company.Name,
+ 			job.JobSkills.Select(js => js.Skill.Name).ToList(),
+			job.Applications.Count,
+			job.CreatedAt
+		))
+		.FirstOrDefaultAsync();
+
+			return job;
+		}
+		public async Task EditJobAsync(int jobId,int adminId,UpdateRequestDto request)
+		{
+			var job = await _jobRepository.GetJobWithId(jobId);
+			if (job is null)
+				throw new BadRequestException("job not found");
+
+			var isAuthorized = await _companyRepository.IsUserAdminOfCompanyAsync(job.CompanyId, adminId);
+			if (!isAuthorized)
+				throw new UnauthorizedAccessException("Not authorized to edit this job");
+
+ 			if (!string.IsNullOrWhiteSpace(request.Title))
+				job.Title = request.Title;
+
+			if (!string.IsNullOrWhiteSpace(request.Description))
+				job.Description = request.Description;
+
+ 			if (request.Salary > 0)
+				job.Salary = request.Salary;
+
+			if (!string.IsNullOrWhiteSpace(request.Location))
+				job.Location = request.Location;
+
+			if (!string.IsNullOrWhiteSpace(request.ExperienceLevel))
+				job.ExperieceLevel = request.ExperienceLevel;
+
+ 			if (!string.IsNullOrWhiteSpace(request.typeJob) &&
+				 Enum.TryParse<TypeJob>(request.typeJob, true, out var parsedType))
+			{
+				job.TypeJop = parsedType;
+			}
+			var skillsChanged = await UpdateJobSkillsAsync(job, request.Skills);
+			await _jobRepository.UpdateAsync(job);
+			await _jobRepository.SaveChangesAsync();
+
+		}
+
+		private async Task<bool> UpdateJobSkillsAsync(Job job,List<string>? newSkillNames)
+		{
+			if (newSkillNames == null) return false;
+			var normalizedNewSkills = newSkillNames.Where(s => !string.IsNullOrWhiteSpace(s))
+				.Select(s => s.Trim().ToLower())
+				.Distinct().OrderBy(s => s).ToList();
+
+			var currentSkillNames = job.JobSkills.Select(js => js.Skill.Name.ToLower()).OrderBy(s => s).ToList();
+			if (normalizedNewSkills.SequenceEqual(currentSkillNames))
+			{
+				return false; // اطلع من الميثود فوراً، ما في داعي لأي عملية DB
+			}
+
+			var skillsToRemove = job.JobSkills.Where(js => !normalizedNewSkills.Contains(js.Skill.Name.ToLower()))
+				.ToList();
+			foreach (var skillToRemove in skillsToRemove)
+				job.JobSkills.Remove(skillToRemove);
+
+			var skillsToAdd = normalizedNewSkills.Where(name => !currentSkillNames.Contains(name)).ToList();
+
+			if (skillsToAdd.Any())
+			{
+				var existingSkillsInDb = await _skillRepository.GetByNamesAsync(skillsToAdd);
+				var existingSkillNames = existingSkillsInDb.Select(s => s.Name.ToLower()).ToList();
+
+				var brandNewSkills = skillsToAdd
+							.Where(name => !existingSkillNames.Contains(name))
+							.Select(name => new Skill { Name = name })
+							.ToList();
+				if (brandNewSkills.Any())
+				{
+					await _skillRepository.AddRangeAsync(brandNewSkills);
+					await _skillRepository.SaveChangesAsync(); 
+				}
+				var allSkillsToConnect = existingSkillsInDb.Concat(brandNewSkills).ToList();
+				foreach (var skill in allSkillsToConnect)
+				{
+					job.JobSkills.Add(new JobSkill { JobId = job.Id, SkillId = skill.Id });
+				}
+			}
+			return true;
+		}
+
+		public async Task DeleteJobAsync(int idJob,int adminId) {
+
+			var job = await _jobRepository.GetByIdAsync(idJob);
+			if(job==null)
 				throw new BadRequestException("This job is not exist");
 
-			return job.ToResponse();
+
+			var isAuther = await _companyRepository.IsUserAdminOfCompanyAsync(job.CompanyId, adminId);
+			if (!isAuther)
+				throw new UnauthorizedAccessException("This user is not Authorized");
+			await _jobRepository.DeleteAsync(job);
+			await _jobRepository.SaveChangesAsync();
+ 
 		}
 	}
 }
