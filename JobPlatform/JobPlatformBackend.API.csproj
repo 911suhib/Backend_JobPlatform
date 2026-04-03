@@ -25,4 +25,8 @@
 		<ProjectReference Include="..\JobPlatformBackend.Infrastructure\JobPlatformBackend.Infrastructure.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include=".gitignore\" />
+	</ItemGroup>
+
 </Project>

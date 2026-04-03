@@ -1,7 +1,9 @@
-﻿using JobPlatformBackend.Business.src.Services.Abstractions;
-using MimeKit;
- using MailKit.Security;
+﻿using JobPlatformBackend.Business.src.Managers;
+using JobPlatformBackend.Business.src.Services.Abstractions;
 using MailKit.Net.Smtp;
+ using MailKit.Security;
+using Microsoft.Extensions.Options;
+using MimeKit;
 
 
 
@@ -9,16 +11,17 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 {
 	public class EmailService : IEmailService
 	{
-		private readonly string _smtpServer="smtp.gmail.com";
-		private readonly int _smtpPort=465;
-		private readonly string _fromEmail = "doroob70@gmail.com";
-		private readonly string _password = "flpmodkpxikxczax";
+		private readonly EmailOption _settings;
+		public EmailService(IOptions<EmailOption> settings)
+		{
+			_settings = settings.Value;
+		}
 		public async Task<bool> SendEmailAsync(string toEmail, string subject, string htmlMessage)
 		{
 			try
 			{
 				var email=new MimeMessage();
-				email.From.Add(new MailboxAddress("Doroob", _fromEmail));
+				email.From.Add(new MailboxAddress("Doroob", _settings.FromEmail));
 				email.To.Add(new MailboxAddress("",toEmail));
 
 				email.Subject = subject;
@@ -27,8 +30,8 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 					Text = htmlMessage
 				};
 				using var smtp=new SmtpClient();
-				await smtp.ConnectAsync(_smtpServer,_smtpPort, SecureSocketOptions.SslOnConnect);
-				await smtp.AuthenticateAsync(_fromEmail, _password);
+				await smtp.ConnectAsync(_settings.SmtpServer,_settings.Port, SecureSocketOptions.SslOnConnect);
+				await smtp.AuthenticateAsync(_settings.FromEmail, _settings.Password);
 				await smtp.SendAsync(email);
 				await smtp.DisconnectAsync(true);
 				return true;

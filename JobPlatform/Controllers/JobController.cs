@@ -60,7 +60,7 @@ namespace JobPlatformBackend.API.Controllers
 		{
  			await _jobService.DeleteJobAsync(id, adminId);
 
-			return NoContent(); // الـ Status Code 204 هو "الرسالة" التقنية للنجاح
+			return NoContent(); 
 		}
 
 		[HttpPut("{jobId:int}")]
@@ -68,14 +68,9 @@ namespace JobPlatformBackend.API.Controllers
 		{
 		 
  
-
+			 
+			await _jobService.EditJobAsync(  jobId, adminId, request);
  
-			// 2. استدعاء الـ Service
-			// الـ Service هي اللي بتتحقق من الصلاحيات وجودة البيانات
-			await _jobService.EditJobAsync( adminId, jobId,request);
-
-			// 3. الإرجاع الناجح
-			// في الـ Update، من الأفضل إرجاع NoContent (204) أو Ok مع رسالة
 			return Ok(new { Message = "تم تحديث بيانات الوظيفة والمهارات بنجاح" });
 		}
 	}
