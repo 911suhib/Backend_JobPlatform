@@ -1,3 +1,4 @@
+using CloudinaryDotNet;
 using Ganss.Xss;
 using JobPlatformBackend.API.Middleware;
 using JobPlatformBackend.Business.src.Managers;
@@ -47,6 +48,20 @@ builder.Services.AddScoped<IEmailTemplateService, EmailTemplateService>();
 builder.Services.AddScoped<IJobService, JobService>();
 builder.Services.AddScoped<IJobRepository, JobRepository>();
 builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
+builder.Services.AddScoped<ICompanyService, CompanyService>();  
+builder.Services.AddScoped<ICloudinaryService,CloudinaryService>();
+
+var cloudinarySettings=builder.Configuration.GetSection("CloudinarySettings").Get<CloudinarySettings>();
+var account = new Account(
+    cloudinarySettings?.CloudName,
+    cloudinarySettings?.ApiKey,
+        cloudinarySettings?.ApiSecret
+    )
+    ;
+
+builder.Services.AddSingleton(new Cloudinary(account));
+
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {

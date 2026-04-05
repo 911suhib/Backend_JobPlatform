@@ -156,5 +156,29 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 
 			return true;
 		}
+
+
+
+
+
+
+		public async Task<bool> UpdateUserProfilePictureAsync(int userId, string imageUrl)
+		{
+			try
+			{
+				var user= await _userRepository.GetByIdAsync(userId);
+				if (user == null) return false;
+				user.ProfileImageUrl = imageUrl;
+				await _userRepository.UpdateAsync(user);
+				await _userRepository.SaveChangesAsync();
+				_logger.LogInformation("Profile picture for user {UserId} updated to {Url}", userId, imageUrl);
+				return true;
+			}
+			catch (Exception ex)
+			{
+				_logger.LogError(ex, "Error updating profile picture for user {UserId}", userId);
+				return false;
+			}
+		}
 	}
 }

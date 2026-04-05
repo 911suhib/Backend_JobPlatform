@@ -155,32 +155,32 @@ namespace JobPlatformBackend.Infrastructure.Migrations
             //            onDelete: ReferentialAction.Cascade);
             //    });
 
-            migrationBuilder.CreateTable(
-                name: "CompanyAdmins",
-                columns: table => new
-                {
-                    UserId = table.Column<int>(type: "int", nullable: false),
-                    CompanyId = table.Column<int>(type: "int", nullable: false),
-                    AssignedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Id = table.Column<int>(type: "int", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_CompanyAdmins", x => new { x.UserId, x.CompanyId });
-                    table.ForeignKey(
-                        name: "FK_CompanyAdmins_Companies_CompanyId",
-                        column: x => x.CompanyId,
-                        principalTable: "Companies",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_CompanyAdmins_Users_UserId",
-                        column: x => x.UserId,
-                        principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
+            //migrationBuilder.CreateTable(
+            //    name: "CompanyAdmins",
+            //    columns: table => new
+            //    {
+            //        UserId = table.Column<int>(type: "int", nullable: false),
+            //        CompanyId = table.Column<int>(type: "int", nullable: false),
+            //        AssignedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+            //        Id = table.Column<int>(type: "int", nullable: false),
+            //        CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+            //    },
+            //    constraints: table =>
+            //    {
+            //        table.PrimaryKey("PK_CompanyAdmins", x => new { x.UserId, x.CompanyId });
+            //        table.ForeignKey(
+            //            name: "FK_CompanyAdmins_Companies_CompanyId",
+            //            column: x => x.CompanyId,
+            //            principalTable: "Companies",
+            //            principalColumn: "Id",
+            //            onDelete: ReferentialAction.Cascade);
+            //        table.ForeignKey(
+            //            name: "FK_CompanyAdmins_Users_UserId",
+            //            column: x => x.UserId,
+            //            principalTable: "Users",
+            //            principalColumn: "Id",
+            //            onDelete: ReferentialAction.Cascade);
+            //    });
 
             //migrationBuilder.CreateTable(
             //    name: "Posts",
