@@ -15,5 +15,6 @@ namespace JobPlatformBackend.Domain.src.Abstractions
 		Task<IEnumerable<JobResponseDto>> GetJobsForUserAsync(int userId,int page=1 ,int pageSize=15);
 		Task<Job?> GetJobWithId(int id);
 		Task<List<Skill>> GetByNamesAsync(List<string> names);
+		Task<bool> JobExistsAsync(int jobId, int companyId);
 	}
 }

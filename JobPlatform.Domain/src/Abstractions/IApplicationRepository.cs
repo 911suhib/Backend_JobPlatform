@@ -6,7 +6,7 @@ namespace JobPlatformBackend.Domain.src.Abstractions
 	public interface IApplicationRepository : IBaseRepository<Application> { 
 	
 		// get all applications for a specific job
-	Task <IEnumerable<ApplicationResponse>> GetByJobIdAsync(int jobId);
+	Task <IEnumerable<ApplicationResponse>> GetByJobIdAsync(int jobId, int pageNumber, int pageSize);
 
 		//get all applications by a specific user
 	Task<IEnumerable<Application>> GetByUserIdAsync();
@@ -15,6 +15,6 @@ namespace JobPlatformBackend.Domain.src.Abstractions
 
 		// Optional: get application with Job and User details
 		Task<Application> GetWithDetailsAsync(int applicationId);
-
+		Task<int> GetCountByJobIdAsync(int jobId);
 	}
 }

@@ -208,5 +208,9 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 				.Where(s => lowerNames.Contains(s.Name.ToLower()))
 				.ToListAsync();
 		}
+		public Task<bool> JobExistsAsync(int jobId, int companyId)
+		{
+			return _job.AnyAsync(j => j.Id == jobId && j.CompanyId == companyId);
+		}
 	}
 }

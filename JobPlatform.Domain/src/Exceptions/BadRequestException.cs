@@ -6,4 +6,5 @@ namespace JobPlatformBackend.Domain.src.Exceptions
 	{
 		public BadRequestException(string message) : base(message, (int)HttpStatusCode.BadRequest) { }
 	}
+
 }

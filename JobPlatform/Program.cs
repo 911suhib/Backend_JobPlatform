@@ -51,6 +51,8 @@ builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
 builder.Services.AddScoped<ICompanyService, CompanyService>();  
 builder.Services.AddScoped<ICloudinaryService,CloudinaryService>();
 builder.Services.AddScoped<IImageService, ImageService>();
+builder.Services.AddScoped<IApplicationRepository, ApplicationRepository>();
+builder.Services.AddScoped<IApplicationService, ApplicationService>();  
 
 var cloudinarySection = builder.Configuration.GetSection("CloudinarySettings");
 var cloudName = cloudinarySection["CloudName"];

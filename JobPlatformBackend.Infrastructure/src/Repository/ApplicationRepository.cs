@@ -24,10 +24,16 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 			_logger = logger;
 			_application = _context.Set<Application>();
 		}
-
-		public async Task<IEnumerable<ApplicationResponse>> GetByJobIdAsync(int jobId)
+		public async Task<int> GetCountByJobIdAsync(int jobId)
 		{
-			var applications = await _application.AsNoTracking().Where(a => a.JobId == jobId).Select(
+ 			return await _context.Applications
+				.CountAsync(a => a.JobId == jobId);
+		}
+		public async Task<IEnumerable<ApplicationResponse>> GetByJobIdAsync(int jobId,int pageNumber,int pageSize)
+		{
+			var applications = await _application.AsNoTracking().Where(a => a.JobId == jobId).OrderByDescending(a => a.CreatedAt)
+				.Skip((pageNumber - 1) * pageSize).Take(pageSize)
+				.Select(
 				a=>new ApplicationResponse(a.Id, a.UserId, a.User.FName+" "+a.User.LName, a.User.Email, a.JobId, a.Job.Title, a.CreatedAt, a.CvUrl)
 				).ToListAsync();
 			return applications;
@@ -43,7 +49,7 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 			throw new NotImplementedException();
 		}
 
-		public Task<Application> UpdateStatusAsync(int applicationId, StatusApplication status)
+		public Task<Application> UpdateStatusAsync(int applicationId,StatusApplication status)
 		{
 			throw new NotImplementedException();
 		}
