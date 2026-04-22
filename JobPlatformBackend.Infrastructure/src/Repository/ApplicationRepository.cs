@@ -53,5 +53,10 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 		{
 			throw new NotImplementedException();
 		}
+
+		public async Task<bool> GetByUserIdAndJobIdAsync(int userId, int jobId)
+		{
+			return await _application.AnyAsync(a => a.UserId == userId && a.JobId == jobId);
+		}
 	}
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JobPlatformBackend.Contracts.Contracts.UserSkill
 {  	public record UserSkillDto(
-		
+		int SkillId,
 		string SkillName
 	);
 }

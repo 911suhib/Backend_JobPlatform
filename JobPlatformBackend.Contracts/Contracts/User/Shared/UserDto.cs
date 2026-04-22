@@ -15,6 +15,6 @@ namespace JobPlatformBackend.API.Contracts.User.Shared
 		string ?Headline,
 		string ?Location,
 		string ?About,
-		List<UserSkillDto?> Skills
+		List<UserSkillDto> Skills
 	);
 }

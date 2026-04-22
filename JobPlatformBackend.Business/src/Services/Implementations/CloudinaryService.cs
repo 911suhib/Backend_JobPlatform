@@ -45,5 +45,35 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 
 			return result;
 		}
+
+		public async Task<DeletionResult?> DeleteFileAsync(string publicId)
+		{
+			if (string.IsNullOrEmpty(publicId)) return null;
+
+			var deleteParams = new DeletionParams(publicId)
+			{
+				ResourceType = ResourceType.Raw
+			};
+			var result = await _cloudinary.DestroyAsync(deleteParams);
+
+			return result;
+		}
+
+		public async Task<RawUploadResult> UploadFileAsync(IFormFile file, string folderName)
+		{
+			var uploadResult = new RawUploadResult();
+			if (file?.Length > 0)
+			{
+				using var stream = file.OpenReadStream();
+				var uploadParams = new RawUploadParams
+				{
+					File = new FileDescription(file.FileName, stream),
+					Folder = folderName,
+					AccessMode = "public"
+				};
+				uploadResult = await _cloudinary.UploadAsync(uploadParams);
+			}
+			return uploadResult;
+		}
 	}
 }

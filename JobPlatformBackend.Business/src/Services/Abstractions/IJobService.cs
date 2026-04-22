@@ -19,5 +19,6 @@ namespace JobPlatformBackend.Business.src.Services.Abstractions
 		Task<PagedResponseDto<JobResponseDto>> GetAllJobsByCompanyIdAsync(GetByCompanyIdDto getByCompanyId);
 		Task<PagedResponseDto<JobResponseDto>> GetAllJobsBySkillNameAsync(GetBySkillNameDto getBySkill);
 		Task<JobResponseDto> GetJobById(int id);
+		
 	}
 }

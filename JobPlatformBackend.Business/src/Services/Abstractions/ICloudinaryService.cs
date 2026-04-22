@@ -9,5 +9,8 @@ namespace JobPlatformBackend.Business.src.Services.Abstractions
 	{
 		Task<DeletionResult?> DeleteImageAsync(string publicId);
 		Task<ImageUploadResult> UploadImageAsync(IFormFile file, string folderName);
+
+		Task<DeletionResult?> DeleteFileAsync(string publicId);
+		Task<RawUploadResult> UploadFileAsync(IFormFile file, string folderName);
 	}
 }

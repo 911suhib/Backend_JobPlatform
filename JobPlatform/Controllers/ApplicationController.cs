@@ -1,5 +1,7 @@
 ﻿using JobPlatformBackend.Business.src.Services.Abstractions;
+using JobPlatformBackend.Contracts.Contracts.Application.Create;
 using JobPlatformBackend.Contracts.Contracts.Application.Get;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JobPlatformBackend.API.Controllers
@@ -20,6 +22,14 @@ namespace JobPlatformBackend.API.Controllers
 		{
  			var applications = await _applicationService.GetApplicationsByJobIdAsync(userId, request);
 			return Ok(applications);
+		}
+		[HttpPost("apply")]
+ 		public async Task<IActionResult> ApplyToJob( int userId,int jobId,IFormFile cvFile)
+		{
+			//var userid=User.Claims.FirstOrDefault(c => c.Type == "userId")?.Value;
+			var result = await _applicationService.ApplyToJobAsync(userId, jobId, cvFile);
+			if (!result) return BadRequest();
+			return Ok(new { Message = "Application submitted successfully." });
 		}
 	}
 }

@@ -16,5 +16,6 @@ namespace JobPlatformBackend.Domain.src.Abstractions
 		// Optional: get application with Job and User details
 		Task<Application> GetWithDetailsAsync(int applicationId);
 		Task<int> GetCountByJobIdAsync(int jobId);
+		Task<bool> GetByUserIdAndJobIdAsync(int userId, int jobId);
 	}
 }
