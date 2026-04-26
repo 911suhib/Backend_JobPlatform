@@ -26,10 +26,10 @@ namespace JobPlatformBackend.Infrastructure.src.Database
 
 		public DbSet<Skill> Skills { get; set; }
 
-		public DbSet<PostComment> PostComments { get; set; }
+		public DbSet<UserDashboardStats> UserDashboardStats { get; set; }
+		public DbSet<CareerArchitect> CareerArchitects { get; set; }
 
-		public DbSet<PostLike> postLikes { get; set; }
-
+	 
 		public AppDbContext(DbContextOptions<AppDbContext> options):base(options) { }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)

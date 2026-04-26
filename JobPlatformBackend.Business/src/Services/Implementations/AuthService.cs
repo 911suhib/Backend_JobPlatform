@@ -33,7 +33,8 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 		private readonly IVerificationService _verificationService;
 		private readonly IEmailTemplateService _emailTemplateService;
 
-		public AuthService(IEmailService emailService,IVerificationService verificationService,IEmailTemplateService emailTemplate,IUserRepository userRepository,JwtManager jwtManager,ISanitizerService sanitizerService)
+		private readonly IDashboardService _dashboardService;
+		public AuthService(IDashboardService dashboardService,IEmailService emailService,IVerificationService verificationService,IEmailTemplateService emailTemplate,IUserRepository userRepository,JwtManager jwtManager,ISanitizerService sanitizerService)
 		{
 			_userRepository = userRepository;
 			_jwtManager = jwtManager;
@@ -41,6 +42,7 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 			_emailService = emailService;
 			_verificationService = verificationService;
 			_emailTemplateService = emailTemplate;
+			_dashboardService = dashboardService;
 		}
 
 		public async Task<string> AuthenticateUserAsync(UserCredentials userCredentials)
@@ -95,7 +97,7 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
  					await _userRepository.SaveChangesAsync();
 					throw new EmailNotVerifiedException("Verification code resent. Please verify your email.");
 					}
-					throw new ConflictException("A user with this email alredy exist.");
+					throw new BadRequestException("A user with this email alredy exist.");
 				}
 
 			try
@@ -115,8 +117,10 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 				};
 
 				await _userRepository.AddAsync(userEntity);
-				await _verificationService.SendEmailVerificationAsync(userEntity);
 				await _userRepository.SaveChangesAsync();
+				await _dashboardService.InitializeDashboardAsync(userEntity.Id);
+				await _verificationService.SendEmailVerificationAsync(userEntity);
+
 
 				return userEntity.ToDto();
 			}

@@ -23,28 +23,28 @@ namespace JobPlatformBackend.API.Controllers
 			return Ok(user);
 		}
 
- 		[Authorize]
+		[Authorize]
 		[HttpPost]
 		public async Task<IActionResult> AddSkill(AddSkill request)
-		
 		{
-			var user = User.FindFirst(ClaimTypes.NameIdentifier);
-
-			if (user == null || !int.TryParse(user.Value, out var userId))
+			var userClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+			if (userClaim == null || !int.TryParse(userClaim.Value, out var userId))
 				return Unauthorized();
 
-			var result = await _skillService.AddSkillToUserAsync(userId, request.AddSkillRequest);
+			// استلم الكائن المكتمل
+			var skillDto = await _skillService.AddSkillToUserAsync(userId, request.AddSkillRequest);
 
-			if (!result)
+			if (skillDto == null)
 				return BadRequest();
 
-			return Ok(new {Message="Add Successfuly"});
+			// رجع الـ DTO للفرونت إند (هسا صار فيه ID و Name)
+			return Ok(skillDto);
 		}
 
- 
-		
-		
-        [HttpDelete("{skillId}")]
+
+
+
+		[HttpDelete("{skillId}")]
 		[Authorize]
 		public async Task<IActionResult> RemoveSkill(int skillId)
 		{

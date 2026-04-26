@@ -18,7 +18,7 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 {
 	public class SkillService(AppDbContext _context,ISkillRepository _skillRepository, IUserRepository _userRepository, ILogger<UserService> _logger) : ISkillService
 	{
-		public async Task<bool> AddSkillToUserAsync(int userId, string skillName)
+		public async Task<SkillDto> AddSkillToUserAsync(int userId, string skillName)
 		{
 			skillName = skillName.Trim();
 
@@ -27,19 +27,19 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 				.FirstOrDefaultAsync(u => u.Id == userId);
 
 			if (user == null)
-				return false;
+				throw new NotFoundException("User not found"); // أفضل من false عشان تعرف العلة
 
 			var skill = await _skillRepository.GetByNameAsync(skillName);
 
- 			if (skill == null)
+			if (skill == null)
 			{
 				skill = new Skill { Name = skillName };
 				await _skillRepository.AddAsync(skill);
-				await _context.SaveChangesAsync();
+				await _context.SaveChangesAsync(); // هون بتولد الـ ID للمهارة الجديدة
 			}
 
- 			if (user.UserSkills.Any(us => us.SkillId == skill.Id))
-				throw new DuplicateSkillException("This skill is already have by user");
+			if (user.UserSkills.Any(us => us.SkillId == skill.Id))
+				throw new DuplicateSkillException("This skill is already held by user");
 
 			user.UserSkills.Add(new UserSkill
 			{
@@ -48,7 +48,9 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 			});
 
 			await _context.SaveChangesAsync();
-			return true;
+
+			// التعديل الجوهري: نرجع الـ DTO كامل مع الـ ID
+			return new SkillDto(skill.Id, skill.Name);
 		}
 
 		public async Task<IEnumerable<SkillDto>> GetAllSkillsAsync(CancellationToken cancellationToken = default)

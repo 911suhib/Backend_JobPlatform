@@ -189,6 +189,5 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 		}
 
 	}
-	
-	 
-	}
+
+}

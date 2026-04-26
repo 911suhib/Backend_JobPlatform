@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace JobPlatformBackend.Business.src.Services.Abstractions
 {
+
 	public interface IApplicationService
 	{
 		Task<PagedResponseDto<ApplicationResponse>> GetApplicationsByJobIdAsync(int userId, GetAllApplicationRequest request);
@@ -22,4 +23,5 @@ namespace JobPlatformBackend.Business.src.Services.Abstractions
 		Task<PagedResponseDto<MyApplicationResponse>> GetApplicationByIdAsync(int userId, int pageNumber, int pageSize);
 		Task<ApplicationResponse> GetApplicationDetailsAsync(int userId, int applicationId);
 	}
+
 }

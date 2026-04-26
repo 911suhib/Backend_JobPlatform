@@ -1,7 +1,7 @@
 ﻿using JobPlatformBackend.Business.src.Managers;
 using JobPlatformBackend.Business.src.Services.Abstractions;
 using MailKit.Net.Smtp;
- using MailKit.Security;
+using MailKit.Security;
 using Microsoft.Extensions.Options;
 using MimeKit;
 

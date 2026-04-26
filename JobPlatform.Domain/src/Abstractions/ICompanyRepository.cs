@@ -13,4 +13,5 @@ namespace JobPlatformBackend.Domain.src.Abstractions
 		Task<bool> IsUserAdminOfCompanyAsync( int companyId, int userId);
 		Task RemoveAdminFromCompanyAsync(int companyId, int userId);
 	}
+	
 }

@@ -12,8 +12,7 @@ namespace JobPlatformBackend.Business.src.Services.Abstractions
 	{
 		Task<IEnumerable<UserDto>> GetUsersBySkillNameAsync(string skillName, CancellationToken cancellationToken = default);
 
-		Task<bool> AddSkillToUserAsync(int userId, string skillName);
-		Task<bool> RemoveSkillFromUserAsync(int userId, int skillId);
+		Task<SkillDto> AddSkillToUserAsync(int userId, string skillName); Task<bool> RemoveSkillFromUserAsync(int userId, int skillId);
 
 		Task<IEnumerable<SkillDto>> GetAllSkillsAsync(CancellationToken cancellationToken = default);
 	}

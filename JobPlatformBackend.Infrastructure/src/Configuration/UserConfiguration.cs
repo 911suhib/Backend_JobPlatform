@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,6 +15,16 @@ namespace JobPlatformBackend.Infrastructure.src.Configuration
 		public void Configure(EntityTypeBuilder<User> builder)
 		{
 			builder.HasKey(x => x.Id);
+
+			builder
+		.HasOne(u => u.DashboardStats)
+		.WithOne(s => s.User)
+		.HasForeignKey<UserDashboardStats>(s => s.UserId);
+
+			builder
+				.HasOne(u => u.CareerPath)
+				.WithOne(c => c.User)
+				.HasForeignKey<CareerArchitect>(c => c.UserId);
 
 			builder.Property(u => u.FName)
 				  .IsRequired()
@@ -72,9 +83,7 @@ namespace JobPlatformBackend.Infrastructure.src.Configuration
 			 
 
 			// Relationships
-			builder.HasMany(u => u.Posts)
-				.WithOne(p => p.User)
-				.HasForeignKey(p => p.UserId);
+		 
 
 			builder.HasMany(u => u.Applications)
 				.WithOne(a => a.User)
@@ -84,13 +93,8 @@ namespace JobPlatformBackend.Infrastructure.src.Configuration
 				.WithOne(us => us.User)
 				.HasForeignKey(us => us.UserID);
 
-			builder.HasMany(u => u.PostLikes)
-				.WithOne(pl => pl.User)
-				.HasForeignKey(pl => pl.UserId);
-
-			builder.HasMany(u => u.PostComments)
-				.WithOne(pc => pc.User)
-				.HasForeignKey(pc => pc.UserId);
+	 
+ 
 
 			builder.ToTable("Users");
 		}
