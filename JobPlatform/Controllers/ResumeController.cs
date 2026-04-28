@@ -23,7 +23,6 @@ namespace JobPlatformBackend.API.Controllers
 
 		[HttpPost("upload-resume/{userId}")]
 		[Authorize]
-		
 		public async Task<IActionResult> UploadResume(  IFormFile file)
 		{
 			var nameIdentifier = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -32,6 +31,8 @@ namespace JobPlatformBackend.API.Controllers
 			{
 				throw new UnauthorizedAccessException("Invalid or missing user token.");
 			}
+
+
 			// 1. التحقق الأولي من الملف
 			if (file == null || file.Length == 0)
 			{

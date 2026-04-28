@@ -27,25 +27,46 @@ public class GeminiService : IGeminiService
 
 	public async Task<AIAnalysisResult> AnalyzeResumeAsync(string resumeText)
 	{
-		var prompt = $@"Analyze the following text and determine if it is a professional resume or CV. 
-Your response must be ONLY a valid JSON object. Do not include markdown tags like ```json or any introductory text.
+	var prompt = $@"Analyze the following text and determine if it is a professional resume or CV. 
+Return ONLY a valid JSON object. No prose, no markdown tags.
 
-Required JSON Structure and Rules:
-1. isResume: Boolean (true if the text is a resume/CV, false otherwise).
+Structure:
+{{
+  ""isResume"": boolean,
+  ""headline"": ""string"",
+  ""about"": ""string"",
+  ""experienceYears"": ""string"",
+  ""marketValue"": ""High/Mid/Low"",
+  ""recommendation"": ""نصيحة احترافية بالعربي (2-3 جمل)"",
+  ""targetTitle"": ""string"",
+  ""skills"": [""string""],
+  ""progress"": integer,
+  ""missingSkillsWithImpact"": [
+    {{ ""skillName"": ""string"", ""impactPercentage"": 5-12 }}
+  ],
+  ""roadmapData"": [ 
+    {{
+      ""skillName"": ""اسم المهارة الناقصة"",
+      ""topResources"": [
+        {{
+          ""instructor"": ""اسم المدرب أو المنظمة"",
+          ""courseTitle"": ""اسم الدورة أو التوثيق الرسمي"",
+          ""platform"": ""YouTube/Udemy/Coursera/Official Docs"",
+          ""url"": ""رابط مباشر مؤكد أو رابط بحث دقيق جداً""
+        }}
+      ]
+    }}
+  ]
+}}
 
-If isResume is false, return ONLY: {{ ""isResume"": false }}.
+CRITICAL INSTRUCTIONS FOR 'url':
+1. VERIFICATION: ONLY provide direct URLs if you are 100% certain they are active (e.g., official documentation like learn.microsoft.com or react.dev).
+2. YOUTUBE FALLBACK: For YouTube courses, DO NOT invent playlist IDs. Instead, use a structured search URL that is GUARANTEED to work: 
+   https://www.youtube.com/results?search_query=[Instructor]+[CourseName]+playlist
+3. DIVERSITY: Provide 4 resources per skill. Top 2 MUST be the best available Arabic content. The other 2 can be top-tier English resources (like FreeCodeCamp or Official Docs).
+4. NO DEAD LINKS: If a specific URL is uncertain, construct a precise search query for that resource on its respective platform.
 
-If isResume is true, return:
-2. headline: Create a professional headline including the job title and top 3 technical skills separated by a vertical bar ' | ' (e.g., ""Full-stack Developer | .NET Core | React | SQL Server"").
-3. about: A professional summary paragraph (3-4 sentences) based on the resume content.
-4. experienceYears: Total years of experience as a string (e.g., ""2 Years"" or ""Entry Level"").
-5. marketValue: Evaluate the candidate's skills and experience and return one of these values: ""High"", ""Mid"", or ""Low"".
-6. recommendation: Provide 2-3 sentences of career advice or missing skills to improve their profile.
-7. targetTitle: The most suitable job title the user should apply for (e.g., ""Junior .NET Developer"").
-8. skills: A JSON array of strings containing the top 10 technical skills found in the resume.
-9. progress: An integer (0-100) representing the profile readiness for the target title.
-10. missingSkillsWithImpact: A JSON array of objects. Each object has 'skillName' and 'impactPercentage' (between 5-12). These are skills the user needs to reach the targetTitle.
-Resume Text to Analyze:
+Text to Analyze:
 {resumeText}";
 		var requestBody = new
 		{
@@ -57,7 +78,6 @@ Resume Text to Analyze:
 
 		var jsonRequest = JsonConvert.SerializeObject(requestBody);
 		var content = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
-
 		var response = await _httpClient.PostAsync(ApiUrl, content);
 		var responseString = await response.Content.ReadAsStringAsync();
 
@@ -66,14 +86,35 @@ Resume Text to Analyze:
 			throw new Exception($"Gemini Error: {response.StatusCode} - {responseString}");
 		}
 
-		// معالجة الرد
+		// 1. فك تشفير الرد الأولي من جوجل
 		var dynamicResponse = JsonConvert.DeserializeObject<dynamic>(responseString);
 		string aiJsonText = dynamicResponse.candidates[0].content.parts[0].text;
 
-		// تنظيف النص من علامات الكود إذا وجدت
+		// 2. تنظيف الـ Markdown tags (```json)
 		aiJsonText = aiJsonText.Replace("```json", "").Replace("```", "").Trim();
 
-		return JsonConvert.DeserializeObject<AIAnalysisResult>(aiJsonText)!;
-	}
+		// 3. 🛡️ التعديل الجوهري: استخراج الـ JSON الصافي فقط 🛡️
+		int startIndex = aiJsonText.IndexOf('{');
+		int endIndex = aiJsonText.LastIndexOf('}');
 
+		if (startIndex != -1 && endIndex != -1)
+		{
+			aiJsonText = aiJsonText.Substring(startIndex, (endIndex - startIndex) + 1);
+		}
+		else
+		{
+			throw new Exception("الذكاء الاصطناعي لم يرجع JSON صالح");
+		}
+
+		// 4. تحويل النص لكائن البرمجة (DTO)
+		// استخدمنا Settings لضمان عدم الحساسية لحالة الأحرف
+		var settings = new JsonSerializerSettings
+		{
+			NullValueHandling = NullValueHandling.Ignore,
+			MissingMemberHandling = MissingMemberHandling.Ignore
+		};
+
+		return JsonConvert.DeserializeObject<AIAnalysisResult>(aiJsonText, settings)!;
+	}
 }
+
