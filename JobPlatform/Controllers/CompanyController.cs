@@ -22,16 +22,16 @@ namespace JobPlatformBackend.API.Controllers
 
 		[HttpPost]
 		[Authorize]
-		public async Task<IActionResult> CreateCompany([FromBody] CreateCompanyRequest request)
+ 		public async Task<IActionResult> CreateCompany([FromBody] CreateCompanyRequest request)
 		{
 			var user = User.FindFirst(ClaimTypes.NameIdentifier);
 			if (user == null) return Unauthorized();
 
 			int userId = int.Parse(user.Value);
 
-			await _companyService.CreateCompanyAsync(request, userId);
-			return Ok(new { message = "Company created successfully with you as the owner." });
-		}
+			var company=	await _companyService.CreateCompanyAsync(request, userId);
+			return Ok(company);
+ 		}
 		[HttpPost("{companyId}/logo")]
 		[Authorize]
 		public async Task<IActionResult> UploadLogo(int companyId, IFormFile file)

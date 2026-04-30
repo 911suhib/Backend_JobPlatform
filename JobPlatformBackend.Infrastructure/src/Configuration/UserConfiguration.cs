@@ -93,7 +93,7 @@ namespace JobPlatformBackend.Infrastructure.src.Configuration
 				.WithOne(us => us.User)
 				.HasForeignKey(us => us.UserID);
 
-	 
+	
  
 
 			builder.ToTable("Users");

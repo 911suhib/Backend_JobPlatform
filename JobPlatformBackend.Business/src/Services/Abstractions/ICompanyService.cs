@@ -2,6 +2,7 @@
 using JobPlatformBackend.Contracts.Contracts.Company.Get;
 using JobPlatformBackend.Contracts.Contracts.Company.Update;
 using JobPlatformBackend.Contracts.Contracts.Shared;
+using JobPlatformBackend.Domain.src.Entity;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace JobPlatformBackend.Business.src.Services.Abstractions
 {
 	public interface ICompanyService
 	{
-		Task CreateCompanyAsync(CreateCompanyRequest request,int userId);
+		Task <CreateCompanyResponse>CreateCompanyAsync(CreateCompanyRequest request,int userId);
 		 Task UpdateCompanyAsync(UpdateCompanyRequest request, int userId);
 		 Task DeleteCompanyAsync(int companyId, int userId);
 		 Task AddAdminToCompanyAsync(CreateNewAdmin createNew,int userId);

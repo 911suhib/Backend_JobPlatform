@@ -47,7 +47,7 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 						await _companyRepository.AddAdminToCompanyAsync(newAdmin);
 		}
 
-		public async Task CreateCompanyAsync(CreateCompanyRequest request, int userId)
+		public async Task<CreateCompanyResponse> CreateCompanyAsync(CreateCompanyRequest request, int userId)
 		{
 			var sanitizedDto = _sanitizerService.SanitizeDto(request);
 			var IsValidEmail = Validator.IsValidEmail(sanitizedDto.Email);
@@ -79,6 +79,7 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 				};
 				await _companyRepository.AddAdminToCompanyAsync(companyAdminEntity);
 				await transaction.CommitAsync();
+				return new CreateCompanyResponse(createdCompany.Id, createdCompany.Name, createdCompany.Email,createdCompany.Descriptoin, createdCompany.Location, createdCompany.LogoUrl);
 
 			}
 			catch (Exception)

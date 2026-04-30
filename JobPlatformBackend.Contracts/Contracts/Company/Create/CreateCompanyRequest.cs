@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace JobPlatformBackend.Contracts.Contracts.Company.Create
 {
 	public record CreateCompanyRequest(string Name, String Email, String Description,string ?Location,string ?LogoUrl);
-	
-	
+
+	public record CreateCompanyResponse(int id, string Name, String Email, String Description, string? Location, string? LogoUrl);
+
 }

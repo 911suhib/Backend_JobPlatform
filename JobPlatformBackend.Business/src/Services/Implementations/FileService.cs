@@ -18,9 +18,9 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 			_cloudinaryService = cloudinaryService;
 		}
 
-		public Task DeleteAsync(string publicId)
+		public async Task DeleteAsync(string publicId)
 		{
-			throw new NotImplementedException();
+			await _cloudinaryService.DeleteFileAsync(publicId);
 		}
 
 		public async Task<(string Url, string PublicId)> ReplaceAsync(IFormFile file, string folder, string oldPublicId)
