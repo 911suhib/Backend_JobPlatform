@@ -21,6 +21,9 @@ namespace JobPlatformBackend.Business.src.Mappers
 
 		public static UserDto ToUserIncludeDto(this User user)
 		{
+
+
+ 
 			// استخدمنا ?. لنتأكد إنه القائمة مش نل، واستخدمنا الـ ! لنتأكد من وجود الـ Skill
 			var skills = user.UserSkills?
 				.Select(s => new UserSkillDto(s.Skill!.Id, s.Skill!.Name))

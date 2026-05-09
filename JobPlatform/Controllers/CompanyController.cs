@@ -149,4 +149,7 @@ namespace JobPlatformBackend.API.Controllers
 
 
 	}
+
+
+ 
 }

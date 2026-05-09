@@ -18,6 +18,7 @@ namespace JobPlatformBackend.Contracts.Contracts.Jop
 		string CompanyName,   
 		List<string> Skills,  
 		int ApplicationsCount,    
-		DateTime CreatedAt 
+		DateTime CreatedAt ,
+		string? LogoUrl
 	);							      
 }

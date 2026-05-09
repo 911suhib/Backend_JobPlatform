@@ -27,7 +27,8 @@ namespace JobPlatformBackend.Business.src.Mappers
                 .Select(js => js.Skill.Name)
                 .ToList() ?? new List<string>(),
             job.Applications?.Count ?? 0,
-            job.CreatedAt
+            job.CreatedAt,
+            job.Company?.LogoUrl
         );
        }
 

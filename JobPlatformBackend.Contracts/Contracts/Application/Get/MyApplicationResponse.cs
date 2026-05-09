@@ -14,7 +14,13 @@ namespace JobPlatformBackend.Contracts.Contracts.Application.Get
 		string Status,
 	    DateTime AppliedAt,
 	    string ?JobLocation,
-	    int JobId
+	    int JobId,
+		string Description,
+		string ?LogoUrl,
+		string? location,
+		DateTime createdAt,
+		decimal ?salary,
+		string ExperinceLevel
 		);
 		
 }

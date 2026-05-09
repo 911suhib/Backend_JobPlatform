@@ -98,6 +98,8 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 				try
 				{
 					await _skillRepository.AddRangeAsync(newSkills);
+					await _skillRepository.SaveChangesAsync();
+					
  				}
 				catch
 				{
@@ -177,7 +179,8 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 			job.Company.Name,
  			job.JobSkills.Select(js => js.Skill.Name).ToList(),
 			job.Applications.Count,
-			job.CreatedAt
+			job.CreatedAt,
+			job.Company.LogoUrl
 		))
 		.FirstOrDefaultAsync();
 

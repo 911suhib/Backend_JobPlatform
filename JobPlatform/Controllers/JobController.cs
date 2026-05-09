@@ -62,12 +62,12 @@ namespace JobPlatformBackend.API.Controllers
 		[HttpDelete("{id}")]
 		[Authorize]
 		
-		public async Task<IActionResult> DeleteJob(int adminId)
+		public async Task<IActionResult> DeleteJob(int id)
 		{
 			int userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
 
 
-			await _jobService.DeleteJobAsync(userId, adminId);
+			await _jobService.DeleteJobAsync( id ,userId);
 
 			return NoContent(); 
 		}

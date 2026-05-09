@@ -33,7 +33,7 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 			var totalCount = await query.CountAsync();
 
 			var jobs= await query
-				.OrderByDescending(j => j.CreatedAt)
+				.OrderByDescending(j => j.CreatedAt).Include(x=>x.Company)
 				.Skip((page - 1) * pageSize)
 				.Take(pageSize)
 				.Select(x => new JobResponseDto(
@@ -48,7 +48,8 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 					x.Company.Name,
 					x.JobSkills.Select(js => js.Skill.Name).ToList(),
 					x.Applications.Count(),
-					x.CreatedAt
+					x.CreatedAt,
+					x.Company.LogoUrl
 				))
 				.ToListAsync();
 			return (jobs,totalCount);
@@ -62,7 +63,7 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 
 
 			var companies =await query
-				.OrderByDescending(j=>j.CreatedAt).Skip((page - 1) * pageSize).Take(pageSize)
+				.OrderByDescending(j=>j.CreatedAt).Skip((page - 1) * pageSize).Take(pageSize).Include(x=>x.Company)
 				.Select(
 				x => new JobResponseDto
 				(
@@ -77,7 +78,8 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 					x.Company.Name,
 					x.JobSkills.Select(js => js.Skill.Name).ToList(),
 				    x.Applications.Count(),
-				    x.CreatedAt
+				    x.CreatedAt,
+					x.Company.LogoUrl
 				)
 				).ToListAsync();
 
@@ -108,7 +110,8 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 						x.Company.Name,
 						x.JobSkills.Select(js => js.Skill.Name).ToList(),
 						x.Applications.Count(),
-						x.CreatedAt
+						x.CreatedAt,
+						x.Company.LogoUrl
 					))
 					.ToListAsync();
 			}
@@ -127,7 +130,8 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 			x.Company.Name,
 			x.JobSkills.Select(js => js.Skill.Name).ToList(),
 			x.Applications.Count(),
-			x.CreatedAt
+			x.CreatedAt,
+			x.Company.LogoUrl
 		))
 		.ToListAsync();
 
@@ -193,7 +197,8 @@ namespace JobPlatformBackend.Infrastructure.src.Repository
 					x.Company.Name,
 					x.JobSkills.Select(js => js.Skill.Name).ToList(),
 					x.Applications.Count(),
-					x.CreatedAt
+					x.CreatedAt,
+					x.Company.LogoUrl
 				))
 				.ToListAsync();
 

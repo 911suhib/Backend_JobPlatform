@@ -146,7 +146,13 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 				app.Status.ToString(),
 				app.CreatedAt,
 				app.Job?.Location ?? "Unknown",
-				app.JobId
+				app.JobId,
+				app.Job.Description,
+				app.Job.Company.LogoUrl,
+				app.Job.Location,
+				app.CreatedAt,
+				app.Job.Salary,
+				app.Job.ExperieceLevel
 			)).ToList(); 
 			return new PagedResponseDto<MyApplicationResponse>
 			{
