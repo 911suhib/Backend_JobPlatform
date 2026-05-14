@@ -32,17 +32,15 @@ namespace JobPlatformBackend.API.Middleware
 		{
 			context.Response.ContentType = "application/json";
 
-			// القيم الافتراضية
-			var statusCode = (int)HttpStatusCode.InternalServerError;
+ 			var statusCode = (int)HttpStatusCode.InternalServerError;
 			var message = "Internal Server Error من السيرفر، رح نصلحه حالاً!";
 			object? additionalData = null;
 
-			// التحقق إذا كان الاستثناء من نوعنا المخصص
-			if (exception is AppException appEx)
+ 			if (exception is AppException appEx)
 			{
 				statusCode = appEx.StatusCode;
 				message = appEx.Message;
-				additionalData = appEx.AdditionalData; // هنا الربط الصحيح
+				additionalData = appEx.AdditionalData; 
 			}
 
 			context.Response.StatusCode = statusCode;
@@ -51,8 +49,8 @@ namespace JobPlatformBackend.API.Middleware
 			{
 				StatusCode = statusCode,
 				Message = message,
-				Data = additionalData, // سيحتوي على { "requiresVerification": true }
-				Detail = exception.Message // يظهر في البيئة التطويرية فقط
+				Data = additionalData, 
+				Detail = exception.Message  
 			};
 
 			return context.Response.WriteAsJsonAsync(response);

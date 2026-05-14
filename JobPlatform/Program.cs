@@ -104,13 +104,14 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddCors(options =>
 {
-	options.AddPolicy("AllowAll", policy =>
-	{
-		policy
-			.AllowAnyOrigin()   
-			.AllowAnyMethod()   
-			.AllowAnyHeader();  
-	});
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy
+            .WithOrigins("https://doroob11111.vercel.app", "http://localhost:3000") 
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            ; 
+    });
 });
 
 
@@ -131,8 +132,7 @@ app.UseSwaggerUI(c =>
 	c.SwaggerEndpoint("/swagger/v1/swagger.json", "API V1");
 });
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
+ app.UseStaticFiles();
 
 app.UseRouting();
 
