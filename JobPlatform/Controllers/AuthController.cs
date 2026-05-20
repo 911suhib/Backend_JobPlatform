@@ -1,4 +1,5 @@
-﻿using JobPlatformBackend.Business.src.Managers;
+﻿using Azure.Core;
+using JobPlatformBackend.Business.src.Managers;
 using JobPlatformBackend.Business.src.Services.Abstractions;
 using JobPlatformBackend.Business.src.Services.Implementations;
 using JobPlatformBackend.Contracts.Contracts.User.Create;
@@ -25,7 +26,7 @@ namespace JobPlatformBackend.API.Controllers
 		{
 			var result = await _authService.AuthenticateUserAsync(request);
 		 
-			return Ok(new { Token = result });
+			return Ok(new { AccessToken = result.AccessToken, RefreshToken=result.RefreshToken });
 		}
 		
 
@@ -99,6 +100,18 @@ namespace JobPlatformBackend.API.Controllers
 				return Ok(new { message = "تم تحديث كلمة المرور بنجاح، يمكنك تسجيل الدخول الآن 🚀" });
 
 			return BadRequest("حدث خطأ أثناء تحديث كلمة المرور");
+		}
+
+		[HttpPost("refresh-token")]
+		public async Task<IActionResult> Refresh([FromBody] RefreshTokenRequest request)
+		{
+ 			var result = await _authService.RefreshTokenAsync(request.RefreshToken);
+
+ 			return Ok(new
+			{
+				AccessToken = result.AccessToken,
+				RefreshToken = result.RefreshToken
+			});
 		}
 	}
 }

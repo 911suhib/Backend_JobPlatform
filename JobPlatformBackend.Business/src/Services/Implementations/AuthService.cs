@@ -10,6 +10,7 @@ using JobPlatformBackend.Contracts.Contracts.UserSkill;
 using JobPlatformBackend.Domain.src.Abstractions;
 using JobPlatformBackend.Domain.src.Entity;
 using JobPlatformBackend.Domain.src.Exceptions;
+using JobPlatformBackend.Infrastructure.src.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,7 +35,8 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 		private readonly IEmailTemplateService _emailTemplateService;
 
 		private readonly IDashboardService _dashboardService;
-		public AuthService(IDashboardService dashboardService,IEmailService emailService,IVerificationService verificationService,IEmailTemplateService emailTemplate,IUserRepository userRepository,JwtManager jwtManager,ISanitizerService sanitizerService)
+		private readonly IRefreshTokenRepository _refreshTokenRepository;
+		public AuthService(IRefreshTokenRepository refreshTokenRepository,IDashboardService dashboardService,IEmailService emailService,IVerificationService verificationService,IEmailTemplateService emailTemplate,IUserRepository userRepository,JwtManager jwtManager,ISanitizerService sanitizerService)
 		{
 			_userRepository = userRepository;
 			_jwtManager = jwtManager;
@@ -43,9 +45,34 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 			_verificationService = verificationService;
 			_emailTemplateService = emailTemplate;
 			_dashboardService = dashboardService;
+			_refreshTokenRepository = refreshTokenRepository;
+		}
+		public async Task<AuthResultDto> RefreshTokenAsync(string refreshToken)
+		{
+ 			var storedToken = await _refreshTokenRepository.GetByTokenAsync(refreshToken);
+
+ 			if (storedToken == null || storedToken.IsRevoked || storedToken.ExpiryDate <= DateTime.UtcNow)
+			{
+				throw new BadRequestException("Invalid or expired refresh token.");
+			}
+
+ 			var user = await _userRepository.GetByIdAsync(storedToken.UserId)
+				?? throw new NotFoundException("User not found.");
+
+ 			storedToken.IsRevoked = true;
+			await _refreshTokenRepository.DeleteRefreshTokenAsync(refreshToken);  
+
+ 			string newAccessToken = _jwtManager.GenerateAccessToken(user);
+			string newRefreshToken = await _jwtManager.GenerateRefreshTokenAsync(user);
+
+ 			return new AuthResultDto
+			{
+				AccessToken = newAccessToken,
+				RefreshToken = newRefreshToken
+			};
 		}
 
-		public async Task<string> AuthenticateUserAsync(UserCredentials userCredentials)
+		public async Task<AuthResultDto> AuthenticateUserAsync(UserCredentials userCredentials)
 		{
 			var user =await _userRepository.GetUserByEmailAsync(userCredentials.Email)??throw new BadRequestException("Invalid login credentials.");
 			if (!user.IsEmailVerified)
@@ -67,8 +94,12 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 
 			var sendeEmail = await _emailService.SendEmailAsync(user.Email, subject, html);
 			string token = _jwtManager.GenerateAccessToken(user);
-			return token;
-
+			var refreshToken =await _jwtManager.GenerateRefreshTokenAsync(user);
+			return new AuthResultDto
+			{
+				AccessToken = token,
+				RefreshToken = refreshToken
+			};
 		}
 
 		public async Task<CreateUserResponse> CreateUserAsync(CreateUserRequests requests)
@@ -136,10 +167,7 @@ namespace JobPlatformBackend.Business.src.Services.Implementations
 			throw new NotImplementedException();
 		}
 
-		public Task<string> RefreshTokenAsync(string refreshToken)
-		{
-			throw new NotImplementedException();
-		}
+	 
 
 		public Task<User> ResetPasswordAsync(string email, string code, string newPassword)
 		{

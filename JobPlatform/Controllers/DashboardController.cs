@@ -6,7 +6,7 @@ using System.Security.Claims;
 namespace JobPlatformBackend.API.Controllers
 {
 	[ApiController]
-	[Route("api/[controller]")]
+	[Route("api/v1/[controller]")]
 	public class DashboardController : ControllerBase
 	{
 		private readonly IDashboardService _dashboardService;

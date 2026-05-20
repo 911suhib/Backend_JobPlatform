@@ -56,7 +56,7 @@ builder.Services.AddScoped<IImageService, ImageService>();
 builder.Services.AddScoped<IApplicationRepository, ApplicationRepository>();
 builder.Services.AddScoped<IApplicationService, ApplicationService>();  
 builder.Services.AddScoped<IFileService, FileService>();
-
+builder.Services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
 
 var cloudinarySection = builder.Configuration.GetSection("CloudinarySettings");
 var cloudName = cloudinarySection["CloudName"];
@@ -117,14 +117,9 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// 1. Ãæá ÔíÁ ÏÇÆãÇğ åæ ÇáÜ Exception Middleware ÚÔÇä íãÓß Ãí ÎØÃ ÈÕíÑ ÊÍÊíå
-app.UseMiddleware<ExceptionMiddleware>();
+ app.UseMiddleware<ExceptionMiddleware>();
 
-//if (app.Environment.IsDevelopment())
-//{
-//	// ÔíáåÇ Ãæ ÎáíåÇ ÈÚÏ ÇáãíÏá æíÑ ÊÈÚß¡ ÈÓ ÇáÃİÖá ÊÚÊãÏ Úáì ÊÈÚß ÚÔÇä ÊÔæİ ÇáÜ JSON Çááí ÈÏß ÇíÇå
-//	 app.UseDeveloperExceptionPage();
-//}
+ 
 
 app.UseSwagger();
 app.UseSwaggerUI(c =>

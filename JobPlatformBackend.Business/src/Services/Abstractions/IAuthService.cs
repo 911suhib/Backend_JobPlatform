@@ -15,9 +15,9 @@ namespace JobPlatformBackend.Business.src.Services.Abstractions
 	{
 		Task SendVerificationCodeAsync(string email); 
  
-		Task<string> AuthenticateUserAsync(UserCredentials userCredentials);
+		Task<AuthResultDto> AuthenticateUserAsync(UserCredentials userCredentials);
 
-		Task<string> RefreshTokenAsync(string refreshToken);
+		Task<AuthResultDto> RefreshTokenAsync(string refreshToken);
 		Task<User> VerifyEmailAsync(string email, string code);
 
 		Task<bool> ForgotPasswordAsync(string email);

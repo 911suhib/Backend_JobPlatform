@@ -1,17 +1,16 @@
 ﻿using JobPlatformBackend.Domain.src.Abstractions;
 using JobPlatformBackend.Domain.src.Entity;
+using JobPlatformBackend.Domain.src.Exceptions;
 using JobPlatformBackend.Infrastructure.src.Database;
 using Microsoft.Extensions.Options;
-using System.Security.Claims;
-
-
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
 
 namespace JobPlatformBackend.Business.src.Managers
 {
@@ -20,13 +19,16 @@ namespace JobPlatformBackend.Business.src.Managers
 		private readonly JwtOptions _options;
 		private readonly IUserRepository _userRepository;
 		private readonly AppDbContext _dbcontext;
+		private readonly IRefreshTokenRepository _refreshTokenRepository;
 
-		public JwtManager(IOptions<JwtOptions>options,IUserRepository userRepository,AppDbContext appDbContext)
+		public JwtManager(IOptions<JwtOptions> options, IRefreshTokenRepository refreshTokenRepository, IUserRepository userRepository, AppDbContext appDbContext)
 		{
 			_options = options.Value;
 			_userRepository = userRepository;
 			_dbcontext = appDbContext;
+			_refreshTokenRepository = refreshTokenRepository;
 		}
+
 
 		public string GenerateAccessToken(User user)
 		{
@@ -40,11 +42,11 @@ namespace JobPlatformBackend.Business.src.Managers
 
 			var securityTokenDescriptor = new SecurityTokenDescriptor
 			{
-				Issuer=_options.Issuer,
-				Audience=_options.Audience,
-				Expires=DateTime.UtcNow.AddMinutes(15),
-				Subject=new ClaimsIdentity(claims),
-				SigningCredentials=singingCredentials
+				Issuer = _options.Issuer,
+				Audience = _options.Audience,
+				Expires = DateTime.UtcNow.AddMinutes(10),
+				Subject = new ClaimsIdentity(claims),
+				SigningCredentials = singingCredentials
 			};
 			var token = new JwtSecurityTokenHandler().CreateToken(securityTokenDescriptor);
 			string tokenValue = new JwtSecurityTokenHandler().WriteToken(token);
@@ -67,6 +69,52 @@ namespace JobPlatformBackend.Business.src.Managers
 				signingCredentials: creds
 				);
 			return new JwtSecurityTokenHandler().WriteToken(token);
+		}
+
+		public async Task<string> GenerateRefreshTokenAsync(User user)
+		{
+			var randomNumber = new byte[32];
+			using var rng = System.Security.Cryptography.RandomNumberGenerator.Create();
+			rng.GetBytes(randomNumber);
+
+			string tokenString = Convert.ToBase64String(randomNumber);
+			var refreshToken = new UserRefreshToken
+			{
+				UserId = user.Id,
+				RefreshToken = tokenString,
+				ExpiryDate = DateTime.UtcNow.AddDays(7),
+				IsRevoked = false
+			};
+
+
+			await _refreshTokenRepository.AddRefreshToken(refreshToken);
+			return tokenString;
+		}
+
+		
+		public async Task<AuthResultDto> RefreshTokenAsync(string refreshToken)
+		{
+ 			var storedToken = await _refreshTokenRepository.GetByTokenAsync(refreshToken);
+
+ 			if (storedToken == null || storedToken.IsRevoked || storedToken.ExpiryDate <= DateTime.UtcNow)
+			{
+				throw new BadRequestException("Invalid or expired refresh token.");
+			}
+
+ 			var user = await _userRepository.GetByIdAsync(storedToken.UserId)
+				?? throw new NotFoundException("User not found.");
+
+ 			storedToken.IsRevoked = true;
+			await _refreshTokenRepository.DeleteRefreshTokenAsync(refreshToken);  
+
+ 			string newAccessToken = GenerateAccessToken(user);
+			string newRefreshToken = await GenerateRefreshTokenAsync(user);
+
+ 			return new AuthResultDto
+			{
+				AccessToken = newAccessToken,
+				RefreshToken = newRefreshToken
+			};
 		}
 	}
 }

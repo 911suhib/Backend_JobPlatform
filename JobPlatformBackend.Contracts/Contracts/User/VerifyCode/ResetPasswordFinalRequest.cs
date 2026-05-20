@@ -11,5 +11,4 @@ namespace JobPlatformBackend.Contracts.Contracts.User.VerifyCode
 		string Code,
 		string NewPassword
 	);
-	
 }
